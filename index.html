@@ -1484,6 +1484,82 @@
             color: white;
         }
 
+        /* Slideshow styles */
+        .mySlides {
+            display: block;
+            width: 100%;
+        }
+
+        .mySlides.hidden {
+            display: none;
+        }
+
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+
+        /* Lightbox cursor */
+        .lightbox-trigger {
+            cursor: zoom-in;
+        }
+
+        /* Zoom animation for lightbox */
+        @keyframes zoomIn {
+            from {transform: scale(0.9); opacity: 0;}
+            to {transform: scale(1); opacity: 1;}
+        }
+
+        #lightbox-img {
+            animation: zoomIn 0.3s ease-out;
+        }
+
+        /* Lightbox cursor */
+        #aira-product-image {
+            cursor: zoom-in;
+        }
+
+        /* Zoom animation for lightbox */
+        @keyframes zoomIn {
+            from {transform: scale(0.9); opacity: 0;}
+            to {transform: scale(1); opacity: 1;}
+        }
+
+        #lightbox-img {
+            animation: zoomIn 0.3s ease-out;
+        }
+
+        /* Custom button style that might override conflicting styles */
+        .button-primary {
+            display: inline-block;
+            background-color: #0f766e;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .button-primary:hover {
+            background-color: #115e59;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
     </style>
 </head>
 <body>
@@ -1505,7 +1581,7 @@
                     <a id="nav-link-industry-solutions" href="index.html#industry-solutions" class="text-white hover:text-light transition-colors track-click">Industry Solutions</a>
                     <a id="nav-link-products" href="index.html#products" class="text-white hover:text-light transition-colors track-click">Products</a>
                     <a id="nav-link-pricing" href="index.html#pricing" class="text-white hover:text-light transition-colors track-click">Pricing</a>
-                    <a id="nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a>
+                    <!-- <a id="nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a> -->
                     <a id="nav-link-blogs" href="blogs.html" class="text-white hover:text-light transition-colors track-click">Blogs</a>
                     <a id="nav-link-about" href="aboutus.html" class="text-white hover:text-light transition-colors track-click">About Us</a>
                     <a id="nav-link-contact" href="index.html#contact" class="text-white hover:text-light transition-colors track-click">Contact</a>
@@ -1538,7 +1614,7 @@
                 <a id="mobile-nav-link-industry-solutions" href="index.html#industry-solutions" class="text-white hover:text-light transition-colors track-click">Industry Solutions</a>
                 <a id="mobile-nav-link-products" href="index.html#products" class="text-white hover:text-light transition-colors track-click">Products</a>
                 <a id="mobile-nav-link-pricing" href="index.html#pricing" class="text-white hover:text-light transition-colors track-click">Pricing</a>
-                <a id="mobile-nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a>
+                <!-- <a id="mobile-nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a> -->
                 <a id="mobile-nav-link-blogs" href="blogs.html" class="text-white hover:text-light transition-colors font-semibold track-click">Blogs</a>
                 <a id="mobile-nav-link-contact" href="index.html#contact" class="text-white hover:text-light transition-colors track-click">Contact</a>
                 </div>
@@ -1570,14 +1646,40 @@
                 </h2>
         
                 <div class="flex flex-col sm:flex-row gap-4 mb-16">
+                    <!-- Primary Button -->
                     <a id="hero-cta-start-journey" href="#transformation-journey"
-                       class="button-primary px-8 py-4 rounded-xl text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center track-click">
-                       Start Your AI Transformation
-                       <i class="fas fa-arrow-right ml-2"></i>
+                        style="
+                            display: inline-block;
+                            background: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 100%);
+                            color: white;
+                            font-size: 1.125rem;
+                            font-weight: 600;
+                            padding: 1rem 2rem;
+                            border-radius: 0.75rem;
+                            text-align: center;
+                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            transition: all 0.3s ease;
+                            text-decoration: none;
+                            position: relative;
+                        "
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 12px rgba(123, 44, 191, 0.4)';"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)';"
+                        >
+                        <div style="
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                        ">
+                            <span>Start Your AI Transformation</span>
+                            <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                        </div>
                     </a>
+                    
+                    <!-- Secondary Button -->
                     <a id="hero-cta-explore-solutions" href="#products"
-                       class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 inline-flex items-center track-click">
-                       Explore Our Solutions
+                       class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center track-click">
+                       <span>Explore Our Solutions</span>
                        <i class="fas fa-chevron-down ml-2"></i>
                     </a>
                 </div>
@@ -2897,14 +2999,14 @@ displayInsights(result.insights);</code></pre>
                             <span class="text-gray-700">Compatible with all devices and modern browsers</span>
                         </div>
                         
-                        <div class="flex items-start">
+                        <!-- <div class="flex items-start">
                             <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
                             <span class="text-gray-700">Built with MediaPipe, JavaScript, HTML/CSS, and AWS infrastructure</span>
-                        </div>
+                        </div> -->
                     </div>
                     
                     <!-- Tech Stack Tags -->
-                    <div class="flex flex-wrap gap-2 mb-8">
+                    <!-- <div class="flex flex-wrap gap-2 mb-8">
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">MediaPipe</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">JavaScript</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">HTML/CSS</span>
@@ -2915,7 +3017,7 @@ displayInsights(result.insights);</code></pre>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">WebGL</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">RESTful APIs</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Responsive Design</span>
-                    </div>
+                    </div> -->
                     
                     <!-- Demo Buttons -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -2941,7 +3043,330 @@ displayInsights(result.insights);</code></pre>
             </div>
         </div>
 
-        <!-- Product 2: Production-Ready Chatbots -->
+        <!-- Product 2: IRIS - Interview Readiness & Improvement System -->
+        <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <!-- Product Information -->
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Education</span>
+                        <span class="ml-3 bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Ready to Deploy</span>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">IRIS - Interview Readiness & Improvement System</h3>
+                    
+                    <p class="text-gray-600 mb-6">
+                        Your AI-powered interview coach that helps you prepare, practice, and perform better in job interviews. From resume building to personalized preparation plans and realistic mock interviews with detailed feedback.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">AI Resume Builder with ATS optimization</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Resume-Job Description matching analysis</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Personalized preparation plans and likely questions</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Interactive AI mock interviews with voice interaction</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Detailed performance analysis and improvement tracking</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tech Stack Tags -->
+                    <!-- <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Natural Language Processing</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">React</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Speech Recognition</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Speech Synthesis</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Machine Learning</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Responsive Design</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">RESTful APIs</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Cloud Services</span>
+                    </div> -->
+                    
+                    <!-- Demo Button -->
+                    <!-- IRIS Demo Button - Matching Purple Style -->
+                    <div class="grid grid-cols-1">
+                        <a id="iris-product-website" href="https://iris-ai.in" target="_blank"
+                        class="flex items-center justify-center bg-purple-700 text-white py-3 px-6 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1 track-click">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            <span>Visit IRIS Platform</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Images Slideshow -->
+                <div class="p-8 flex items-center justify-center">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container relative w-full h-full">
+                        <!-- Images will be dynamically loaded or replace with your actual image paths -->
+                        <div class="mySlides fade">
+                            <img src="iris-image-1.png" alt="AI Resume Builder Interface" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=AI+Resume+Builder'" data-index="1">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-2.png" alt="ATS-Optimized Resumes" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=ATS-Optimized+Resumes'" data-index="2">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-3.png" alt="Resume Analysis Report" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Resume+Analysis'" data-index="3">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-4.png" alt="Likely Interview Questions" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Interview+Questions'" data-index="4">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-5.png" alt="Addressing Skill Gaps" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Skill+Gap+Analysis'" data-index="5">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-6.png" alt="Personalized Preparation Timeline" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Prep+Timeline'" data-index="6">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-7.jpeg" alt="AI Mock Interview Interface" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=AI+Mock+Interview'" data-index="7">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-8.png" alt="Mock Interview Experience" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Interview+Experience'" data-index="8">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-9.png" alt="Interview Performance Analysis" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Performance+Analysis'" data-index="9">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-10.png" alt="Key Improvement Areas" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Improvement+Areas'" data-index="10">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-11.png" alt="AI Tutor Suggested Answers" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=AI+Tutor+Guidance'" data-index="11">
+                        </div>
+                        
+                        <div class="mySlides fade hidden">
+                            <img src="iris-image-12.jpeg" alt="Progress Tracking Dashboard" class="max-w-full rounded-lg shadow-lg cursor-pointer lightbox-trigger" 
+                                onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=Progress+Tracking'" data-index="12">
+                        </div>
+                        
+                        <!-- Next and previous buttons -->
+                        <a class="prev absolute top-1/2 left-2 transform -translate-y-1/2 cursor-pointer bg-black bg-opacity-30 text-white p-3 rounded-full z-10 hover:bg-opacity-50" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next absolute top-1/2 right-2 transform -translate-y-1/2 cursor-pointer bg-black bg-opacity-30 text-white p-3 rounded-full z-10 hover:bg-opacity-50" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        <!-- The dots/circles -->
+                        <div class="dots-container absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-1">
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500 active" onclick="currentSlide(1)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(2)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(3)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(4)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(5)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(6)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(7)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(8)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(9)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(10)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(11)"></span>
+                            <span class="dot bg-gray-300 w-2 h-2 rounded-full cursor-pointer hover:bg-gray-500" onclick="currentSlide(12)"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Lightbox -->
+                    <div id="lightbox" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black bg-opacity-90">
+                        <div class="relative max-w-6xl max-h-screen p-4">
+                            <span class="close-lightbox absolute top-4 right-4 text-white text-4xl font-bold cursor-pointer hover:text-gray-300">&times;</span>
+                            
+                            <div class="lightbox-content flex items-center justify-center">
+                                <button class="lightbox-prev absolute left-4 text-white text-4xl font-bold cursor-pointer hover:text-gray-300">&#10094;</button>
+                                <img id="lightbox-img" src="" alt="Enlarged view" class="max-h-screen mx-auto">
+                                <button class="lightbox-next absolute right-4 text-white text-4xl font-bold cursor-pointer hover:text-gray-300">&#10095;</button>
+                            </div>
+                            
+                            <div class="lightbox-caption text-white text-center mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: AIRA - Artificial Intelligence Recruiting Assistant -->
+        <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden mb-16 enhanced-card">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <!-- Product Information -->
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full">HR Tech</span>
+                        <span class="ml-3 bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">Ready to Deploy</span>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">AIRA - Artificial Intelligence Recruiting Assistant</h3>
+                    
+                    <p class="text-gray-600 mb-6">
+                        An end-to-end AI recruiting solution designed for companies handling large volumes of applications. AIRA automates resume screening, conducts preliminary interviews, and schedules technical interviews, saving recruiters countless hours.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="space-y-3 mb-8">
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Bulk upload of 2000-3000+ resumes with automated analysis and parsing</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">AI-powered resume scoring and matching against specific job descriptions</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Automatic email notifications to selected candidates with personalized feedback</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Automated preliminary interviews via natural language phone calls</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Context-aware AI assistant that can reschedule interviews if needed</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Evaluation of technical knowledge, communication skills, and job requirements</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Detailed performance analysis with transcripts and call recordings</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Automatic Google Meet scheduling for final interviews with hiring committee</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Pre-interview confirmation calls to ensure candidate availability</span>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-purple-600 mr-2"><i class="fas fa-check-circle"></i></span>
+                            <span class="text-gray-700">Customizable selection thresholds to match your hiring standards</span>
+                        </div>
+                    </div>
+                    
+                    <!-- AIRA Demo Button - Matching Purple Style -->
+                    <div class="grid grid-cols-1">
+                        <a id="aira-request-demo" href="#contact" 
+                        class="flex items-center justify-center bg-purple-700 text-white py-3 px-6 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1 track-click">
+                            <i class="fas fa-calendar-check mr-2"></i>
+                            <span>Request a Demo</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Image -->
+                <div class="p-8 flex items-center justify-center">
+                    <div class="relative w-full h-full">
+                        <img src="./AIRA.png" alt="AIRA - Artificial Intelligence Recruiting Assistant" 
+                            class="max-w-full rounded-lg shadow-lg cursor-pointer" 
+                            onerror="this.src='https://via.placeholder.com/600x400/F3F4F6/333333?text=AI+Recruiting+Assistant'"
+                            onclick="openAiraLightbox()">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox for AIRA -->
+        <div id="aira-lightbox" class="fixed inset-0 z-50 hidden bg-black bg-opacity-90 flex items-center justify-center">
+            <div class="relative max-w-6xl max-h-screen p-4">
+                <span class="absolute top-4 right-4 text-white text-4xl font-bold cursor-pointer hover:text-gray-300" onclick="closeAiraLightbox()">&times;</span>
+                
+                <div class="flex items-center justify-center">
+                    <img id="aira-lightbox-img" src="" alt="Enlarged view" class="max-h-screen mx-auto" style="animation: zoomIn 0.3s ease-out;">
+                </div>
+                
+                <div class="text-white text-center mt-4">AIRA - Artificial Intelligence Recruiting Assistant</div>
+            </div>
+        </div>
+
+        <script>
+        // Simple lightbox implementation
+        function openAiraLightbox() {
+            const lightbox = document.getElementById('aira-lightbox');
+            const lightboxImg = document.getElementById('aira-lightbox-img');
+            // Get the source of the clicked image
+            const imgSrc = event.target.getAttribute('src');
+            
+            if (lightbox && lightboxImg) {
+                lightboxImg.setAttribute('src', imgSrc);
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeAiraLightbox() {
+            const lightbox = document.getElementById('aira-lightbox');
+            if (lightbox) {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Initialize event listeners when the DOM is fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const airaLightbox = document.getElementById('aira-lightbox');
+            
+            // Close lightbox when clicking outside the image
+            if (airaLightbox) {
+                airaLightbox.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        closeAiraLightbox();
+                    }
+                });
+            }
+            
+            // Keyboard events for lightbox (Escape to close)
+            document.addEventListener('keydown', function(e) {
+                if (airaLightbox && !airaLightbox.classList.contains('hidden')) {
+                    if (e.key === 'Escape') {
+                        closeAiraLightbox();
+                    }
+                }
+            });
+        });
+        </script>
+
+        <!-- Product 4: Production-Ready Chatbots -->
         <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <!-- Product Image -->
@@ -3007,7 +3432,7 @@ displayInsights(result.insights);</code></pre>
                     </div>
                     
                     <!-- Tech Stack Tags -->
-                    <div class="flex flex-wrap gap-2 mb-8">
+                    <!-- <div class="flex flex-wrap gap-2 mb-8">
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Rasa</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">LangChain</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Open Source LLMs (Mistral, DeepSeek)</span>
@@ -3019,7 +3444,7 @@ displayInsights(result.insights);</code></pre>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Retrieval Augmented Generation</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">Vector Databases</span>
                         <span class="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full">API Orchestration</span>
-                    </div>
+                    </div> -->
                     
                     <!-- Demo Button -->
                     <a href="#contact" 
@@ -3444,7 +3869,7 @@ document.head.insertAdjacentHTML('beforeend', `
 </section>
 
 <!-- AI Education Section -->
-<section id="education" class="py-20 bg-white" aria-labelledby="education-title">
+<!-- <section id="education" class="py-20 bg-white" aria-labelledby="education-title">
     <div class="container mx-auto px-6">
         <div class="text-center mb-16">
             <span class="inline-block px-3 py-1 text-sm font-semibold bg-purple-100 text-purple-800 rounded-full mb-3">Our Vision</span>
@@ -3454,16 +3879,16 @@ document.head.insertAdjacentHTML('beforeend', `
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center"> -->
             <!-- Image Section with Stats Overlay -->
-            <div class="relative">
+            <!-- <div class="relative">
                 <img src="education-case-study.webp" 
                      alt="Students engaging in AI education program" 
                      class="rounded-lg shadow-xl"
-                     loading="lazy">
+                     loading="lazy"> -->
                 
                 <!-- Stats overlay -->
-                <div class="absolute bottom-6 left-6 right-6 bg-white bg-opacity-90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-l-4 border-purple-600">
+                <!-- <div class="absolute bottom-6 left-6 right-6 bg-white bg-opacity-90 backdrop-blur-sm p-4 rounded-lg shadow-lg border-l-4 border-purple-600">
                     <div class="grid grid-cols-3 gap-3">
                         <div class="text-center">
                             <div class="text-purple-700 font-bold text-xl">70%</div>
@@ -3479,12 +3904,12 @@ document.head.insertAdjacentHTML('beforeend', `
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Content Section -->
-            <div class="space-y-8">
+            <!-- <div class="space-y-8"> -->
                 <!-- Program Features -->
-                <div class="space-y-6">
+                <!-- <div class="space-y-6">
                     <div class="flex items-start">
                         <div class="feature-icon mr-4 mt-1" aria-hidden="true">
                             <i class="fas fa-school"></i>
@@ -3520,10 +3945,10 @@ document.head.insertAdjacentHTML('beforeend', `
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Program Benefits -->
-                <div class="bg-purple-50 p-6 rounded-lg">
+                <!-- <div class="bg-purple-50 p-6 rounded-lg">
                     <h3 class="text-lg font-bold text-purple-800 mb-4">Our Impact Goals</h3>
                     <ul class="space-y-3" role="list">
                         <li class="flex items-center text-gray-700">
@@ -3539,10 +3964,10 @@ document.head.insertAdjacentHTML('beforeend', `
                             <span>Create pathways to AI careers for underprivileged youth</span>
                         </li>
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- CTA Section -->
-                <div class="flex flex-col sm:flex-row gap-4">
+                <!-- <div class="flex flex-col sm:flex-row gap-4">
                     <a href="ai-education.html" 
                     class="button-primary px-6 py-3 rounded-lg text-white text-center inline-block font-semibold track-click"
                     aria-label="Learn more about AI Education initiative">
@@ -3556,10 +3981,10 @@ document.head.insertAdjacentHTML('beforeend', `
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Programs Preview Cards -->
-        <div class="mt-20">
+        <!-- <div class="mt-20">
             <div class="text-center mb-10">
                 <h3 class="text-2xl font-bold text-gray-800">Tailored Educational Programs</h3>
                 <p class="text-gray-600 max-w-3xl mx-auto mt-3">
@@ -3567,9 +3992,9 @@ document.head.insertAdjacentHTML('beforeend', `
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> -->
                 <!-- Government Schools Card -->
-                <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
+                <!-- <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
                     <div class="p-6">
                         <div class="text-purple-600 text-4xl mb-4 text-center">
                             <i class="fas fa-heart"></i>
@@ -3593,10 +4018,10 @@ document.head.insertAdjacentHTML('beforeend', `
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Students & Professionals Card -->
-                <div class="bg-white rounded-xl border border-purple-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2 border-t-4 border-t-purple-600">
+                <!-- <div class="bg-white rounded-xl border border-purple-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2 border-t-4 border-t-purple-600">
                     <div class="p-6">
                         <div class="text-purple-600 text-4xl mb-4 text-center">
                             <i class="fas fa-graduation-cap"></i>
@@ -3620,10 +4045,10 @@ document.head.insertAdjacentHTML('beforeend', `
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Corporate Training Card -->
-                <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
+                <!-- <div class="bg-white rounded-xl border border-gray-200 shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
                     <div class="p-6">
                         <div class="text-purple-600 text-4xl mb-4 text-center">
                             <i class="fas fa-users-cog"></i>
@@ -3658,7 +4083,7 @@ document.head.insertAdjacentHTML('beforeend', `
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- Contact Section -->
 <section id="contact" class="py-20 gradient-bg relative overflow-hidden" aria-labelledby="contact-title">
     <!-- Background particle effect for consistency with other sections -->
@@ -3763,7 +4188,9 @@ document.head.insertAdjacentHTML('beforeend', `
                                     <option value="">Select an option</option>
                                     <option value="ai-journey">AI Transformation Journey</option>
                                     <option value="industry-solutions">Industry-Specific Solutions</option>
-                                    <option value="virtual-tryon">Virtual Try-On Products</option>
+                                    <option value="virtual-tryon">DIYA-Virtual Try-On</option>
+                                    <option value="virtual-tryon">IRIS</option>
+                                    <option value="virtual-tryon">AIRA</option>
                                     <option value="chatbots">AI Chatbots & Assistants</option>
                                     <option value="education">AI Education Programs</option>
                                     <option value="custom">Custom AI Solution</option>
@@ -3896,9 +4323,6 @@ document.head.insertAdjacentHTML('beforeend', `
                                 <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-all" aria-label="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center hover:bg-opacity-20 transition-all" aria-label="GitHub">
-                                    <i class="fab fa-github"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -3941,7 +4365,7 @@ document.head.insertAdjacentHTML('beforeend', `
                     <h4 class="text-white text-xl font-semibold">Infinite AI</h4>
                 </div>
                 <p class="text-gray-300 mb-6">Transforming businesses through AI and AR innovation, creating unlimited possibilities for your digital transformation journey.</p>
-                <div class="space-y-3">
+                <!-- <div class="space-y-3">
                     <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center group">
                         <div class="w-8 h-8 rounded-lg bg-white bg-opacity-10 flex items-center justify-center mr-3 group-hover:bg-opacity-20 transition-all track-click">
                             <i class="fas fa-shield-alt text-purple-300"></i>
@@ -3954,7 +4378,7 @@ document.head.insertAdjacentHTML('beforeend', `
                         </div>
                         <span>Terms of Service</span>
                     </a>
-                </div>
+                </div> -->
             </div>
 
             <!-- Navigation Links -->
@@ -3986,10 +4410,10 @@ document.head.insertAdjacentHTML('beforeend', `
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#education" class="hover:text-white transition-colors flex items-center track-click">
+                        <!-- <a href="index.html#education" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-graduation-cap mr-3 text-purple-300"></i>
                             <span>AI Education</span>
-                        </a>
+                        </a> -->
                     </li>
                 </ul>
             </div>
@@ -4016,7 +4440,7 @@ document.head.insertAdjacentHTML('beforeend', `
                             <span>Contact</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="#" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-user-friends mr-3 text-purple-300"></i>
                             <span>Our Partners</span>
@@ -4027,7 +4451,7 @@ document.head.insertAdjacentHTML('beforeend', `
                             <i class="fas fa-map-marker-alt mr-3 text-purple-300"></i>
                             <span>Locations</span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
@@ -4081,9 +4505,9 @@ document.head.insertAdjacentHTML('beforeend', `
                         <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="GitHub">
+                        <!-- <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="GitHub">
                             <i class="fab fa-github"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -4103,11 +4527,11 @@ document.head.insertAdjacentHTML('beforeend', `
                 </div>
                 
                 <!-- Quick links -->
-                <div class="flex space-x-6 mt-4 md:mt-0">
+                <!-- <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors" aria-label="Sitemap">Sitemap</a>
                     <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors" aria-label="Accessibility">Accessibility</a>
                     <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors" aria-label="Cookie Policy">Cookie Policy</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -4145,17 +4569,17 @@ document.head.insertAdjacentHTML('beforeend', `
 </div>
 
 <!-- Improved Chat Widget with Modern UI -->
-<div id="rasa-chat-widget" class="fixed bottom-0 right-0 m-6 z-50">
+<!-- <div id="rasa-chat-widget" class="fixed bottom-0 right-0 m-6 z-50"> -->
     <!-- Chat Icon Button with Pulse Effect -->
-    <button id="chat-toggle" class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xl flex items-center justify-center transform transition-transform hover:scale-110 relative track-click">
+    <!-- <button id="chat-toggle" class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xl flex items-center justify-center transform transition-transform hover:scale-110 relative track-click">
         <span class="absolute animate-ping w-full h-full rounded-full bg-purple-400 opacity-50"></span>
         <i class="fas fa-comment-dots text-2xl relative z-10"></i>
-    </button>
+    </button> -->
 
     <!-- Chat Container (Hidden by Default) -->
-    <div id="chat-container" class="hidden rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 transform" style="width: 380px; height: 600px; border: 1px solid rgba(123, 44, 191, 0.2);">
+    <!-- <div id="chat-container" class="hidden rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 transform" style="width: 380px; height: 600px; border: 1px solid rgba(123, 44, 191, 0.2);"> -->
         <!-- Header with Brand -->
-        <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 flex justify-between items-center">
+        <!-- <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-4 flex justify-between items-center">
             <div class="flex items-center">
                 <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center mr-2">
                     <i class="fas fa-gem text-purple-600 text-lg"></i>
@@ -4173,24 +4597,24 @@ document.head.insertAdjacentHTML('beforeend', `
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-        </div>
+        </div> -->
 
         <!-- Chat Messages Area with Custom Scrollbar -->
-        <div id="chat-messages" class="p-6 overflow-y-auto bg-gray-50" style="height: 440px; scrollbar-width: thin; scrollbar-color: #9d4edd #f3f4f6;">
+        <!-- <div id="chat-messages" class="p-6 overflow-y-auto bg-gray-50" style="height: 440px; scrollbar-width: thin; scrollbar-color: #9d4edd #f3f4f6;"> -->
             <!-- Messages will be added here -->
-        </div>
+        <!-- </div> -->
 
         <!-- Input Area with Modern Look -->
-        <div class="border-t border-gray-200 p-4 flex bg-white">
+        <!-- <div class="border-t border-gray-200 p-4 flex bg-white">
             <input id="user-message" type="text" placeholder="Type a message..." 
                 class="flex-1 px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent">
             <button id="send-button" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-3 rounded-r-xl hover:from-purple-700 hover:to-indigo-700 transition-all duration-200 flex items-center justify-center">
                 <i class="fas fa-paper-plane"></i>
             </button>
-        </div>
+        </div> -->
 
         <!-- Typing Indicator (initially hidden) -->
-        <div id="typing-indicator" class="hidden px-4 py-2 bg-gray-50 border-t border-gray-200">
+        <!-- <div id="typing-indicator" class="hidden px-4 py-2 bg-gray-50 border-t border-gray-200">
             <div class="flex items-center text-sm text-gray-500">
                 <div class="typing-animation mr-2">
                     <span></span>
@@ -4201,7 +4625,7 @@ document.head.insertAdjacentHTML('beforeend', `
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
         
@@ -4209,7 +4633,7 @@ document.head.insertAdjacentHTML('beforeend', `
 <!-- Additional CSS for Animations and Effects -->
 <style>
     /* Custom Scrollbar */
-    #chat-messages::-webkit-scrollbar {
+    /* #chat-messages::-webkit-scrollbar {
         width: 6px;
     }
     #chat-messages::-webkit-scrollbar-track {
@@ -4218,19 +4642,19 @@ document.head.insertAdjacentHTML('beforeend', `
     #chat-messages::-webkit-scrollbar-thumb {
         background-color: #9d4edd;
         border-radius: 20px;
-    }
+    } */
 
     /* Button Hover Effects */
-    #send-button:hover {
+    /* #send-button:hover {
         box-shadow: 0 4px 12px rgba(123, 44, 191, 0.2);
-    }
+    } */
     
     /* Typing Animation */
-    .typing-animation {
+    /* .typing-animation {
         display: inline-flex;
         align-items: center;
-        position: relative; /* Added to help with positioning */
-        bottom: 15px; /* Move up by 5 pixels */
+        position: relative; 
+        bottom: 15px; 
     }
     .typing-animation span {
         height: 8px;
@@ -4253,10 +4677,10 @@ document.head.insertAdjacentHTML('beforeend', `
     @keyframes pulse {
         0%, 100% { opacity: 0.4; }
         50% { opacity: 1; }
-    }
+    } */
 
     /* Chat Bubble Styles */
-    .user-bubble {
+    /* .user-bubble {
         background: linear-gradient(135deg, #7b2cbf 0%, #9d4edd 100%);
         color: white;
         border-radius: 18px 18px 4px 18px;
@@ -4283,10 +4707,10 @@ document.head.insertAdjacentHTML('beforeend', `
     @keyframes fadeIn {
         from { opacity: 0; transform: translateY(10px); }
         to { opacity: 1; transform: translateY(0); }
-    }
+    } */
     
     /* Button Styles */
-    .chat-button {
+    /* .chat-button {
         background-color: #f5f0ff;
         color: #7b2cbf;
         border: 1px solid #e0aaff;
@@ -4306,10 +4730,10 @@ document.head.insertAdjacentHTML('beforeend', `
         background-color: #e0aaff;
         transform: translateY(-2px);
         box-shadow: 0 2px 4px rgba(123, 44, 191, 0.2);
-    }
+    } */
     
     /* Product Card Styles */
-    .product-grid {
+    /* .product-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 16px;
@@ -4381,7 +4805,7 @@ document.head.insertAdjacentHTML('beforeend', `
         color: #7b2cbf;
         display: flex;
         align-items: center;
-        justify-content: center;  /* Changed from space-between to center */
+        justify-content: center;  
     }
     
     .product-price .original {
@@ -4389,12 +4813,12 @@ document.head.insertAdjacentHTML('beforeend', `
         color: #999;
         font-size: 14px;
         margin-right: 8px;
-    }
+    } */ 
     
     /* Removed .add-to-cart-btn style completely since we're not using it anymore */
 </style>
 
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         const chatToggle = document.getElementById('chat-toggle');
         const closeChat = document.getElementById('close-chat');
@@ -4701,7 +5125,7 @@ document.head.insertAdjacentHTML('beforeend', `
             return 'user_' + Math.random().toString(36).substring(2, 15);
         }
     });
-</script>
+</script> -->
     
 <script>
     // Define API URLs globally so they're accessible everywhere
@@ -5707,6 +6131,151 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Interaction tracking initialized successfully');
     console.log('Session ID:', window.sessionId);
 });
+</script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    let lightboxIndex = 1;
+    let totalSlides = document.getElementsByClassName("mySlides").length;
+    
+    // Next/previous controls for slideshow
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls for slideshow
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].classList.add("hidden");
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        slides[slideIndex-1].classList.remove("hidden");
+        dots[slideIndex-1].classList.add("active");
+    }
+    
+    // Auto slideshow
+    let slideInterval = setInterval(() => {
+        plusSlides(1);
+    }, 5000);
+    
+    // Pause slideshow when hovering over it
+    const slideshowContainer = document.querySelector('.slideshow-container');
+    slideshowContainer.addEventListener('mouseenter', () => {
+        clearInterval(slideInterval);
+    });
+    
+    // Resume slideshow when mouse leaves
+    slideshowContainer.addEventListener('mouseleave', () => {
+        slideInterval = setInterval(() => {
+            plusSlides(1);
+        }, 5000);
+    });
+    
+    // Lightbox functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+        const closeLightbox = document.querySelector('.close-lightbox');
+        const lightboxNext = document.querySelector('.lightbox-next');
+        const lightboxPrev = document.querySelector('.lightbox-prev');
+        
+        // Open lightbox when clicking on an image
+        lightboxTriggers.forEach(trigger => {
+            trigger.addEventListener('click', function() {
+                lightboxIndex = parseInt(this.getAttribute('data-index'));
+                const imgSrc = this.getAttribute('src');
+                const imgAlt = this.getAttribute('alt');
+                
+                lightboxImg.setAttribute('src', imgSrc);
+                lightboxCaption.textContent = imgAlt;
+                lightbox.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+                
+                // Pause slideshow when lightbox is open
+                clearInterval(slideInterval);
+            });
+        });
+        
+        // Close lightbox
+        closeLightbox.addEventListener('click', function() {
+            lightbox.classList.add('hidden');
+            document.body.style.overflow = ''; // Re-enable scrolling
+            
+            // Resume slideshow
+            slideInterval = setInterval(() => {
+                plusSlides(1);
+            }, 5000);
+        });
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = ''; // Re-enable scrolling
+                
+                // Resume slideshow
+                slideInterval = setInterval(() => {
+                    plusSlides(1);
+                }, 5000);
+            }
+        });
+        
+        // Next image in lightbox
+        lightboxNext.addEventListener('click', function() {
+            lightboxIndex = lightboxIndex >= totalSlides ? 1 : lightboxIndex + 1;
+            updateLightboxImage();
+        });
+        
+        // Previous image in lightbox
+        lightboxPrev.addEventListener('click', function() {
+            lightboxIndex = lightboxIndex <= 1 ? totalSlides : lightboxIndex - 1;
+            updateLightboxImage();
+        });
+        
+        // Update lightbox image
+        function updateLightboxImage() {
+            const newImgEl = document.querySelector(`.lightbox-trigger[data-index="${lightboxIndex}"]`);
+            const newImgSrc = newImgEl.getAttribute('src');
+            const newImgAlt = newImgEl.getAttribute('alt');
+            
+            lightboxImg.setAttribute('src', newImgSrc);
+            lightboxCaption.textContent = newImgAlt;
+        }
+        
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', function(e) {
+            if (lightbox.classList.contains('hidden')) return;
+            
+            if (e.key === 'Escape') {
+                lightbox.classList.add('hidden');
+                document.body.style.overflow = '';
+                
+                // Resume slideshow
+                slideInterval = setInterval(() => {
+                    plusSlides(1);
+                }, 5000);
+            } else if (e.key === 'ArrowRight') {
+                lightboxIndex = lightboxIndex >= totalSlides ? 1 : lightboxIndex + 1;
+                updateLightboxImage();
+            } else if (e.key === 'ArrowLeft') {
+                lightboxIndex = lightboxIndex <= 1 ? totalSlides : lightboxIndex - 1;
+                updateLightboxImage();
+            }
+        });
+    });
 </script>
 </body>
 </html>
