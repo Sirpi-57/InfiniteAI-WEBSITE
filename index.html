@@ -1501,20 +1501,16 @@
                     <a href="index.html" class="text-2xl font-bold text-white" aria-label="Infinite AI Home">Infinite AI</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html#transformation-journey" class="text-white hover:text-light transition-colors">AI Journey</a>
-                    <a href="index.html#industry-solutions" class="text-white hover:text-light transition-colors">Industry Solutions</a>
-                    <a href="index.html#products" class="text-white hover:text-light transition-colors">Products</a>
-                    <a href="index.html#pricing" class="text-white hover:text-light transition-colors">Pricing</a>
-                    <a href="index.html#education" class="text-white hover:text-light transition-colors">AI Education</a>
-                    <a href="blogs.html" class="text-white hover:text-light transition-colors">Blogs</a>
-                    <a href="aboutus.html" class="text-white hover:text-light transition-colors">About Us</a>
-                    <a href="index.html#contact" class="text-white hover:text-light transition-colors">Contact</a>
-                    <button class="button-primary px-6 py-2 rounded-full text-white" 
-                            aria-label="Get Started">
-                        Get Started
-                    </button>
+                    <a id="nav-link-ai-journey" href="index.html#transformation-journey" class="text-white hover:text-light transition-colors track-click">AI Journey</a>
+                    <a id="nav-link-industry-solutions" href="index.html#industry-solutions" class="text-white hover:text-light transition-colors track-click">Industry Solutions</a>
+                    <a id="nav-link-products" href="index.html#products" class="text-white hover:text-light transition-colors track-click">Products</a>
+                    <a id="nav-link-pricing" href="index.html#pricing" class="text-white hover:text-light transition-colors track-click">Pricing</a>
+                    <a id="nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a>
+                    <a id="nav-link-blogs" href="blogs.html" class="text-white hover:text-light transition-colors track-click">Blogs</a>
+                    <a id="nav-link-about" href="aboutus.html" class="text-white hover:text-light transition-colors track-click">About Us</a>
+                    <a id="nav-link-contact" href="index.html#contact" class="text-white hover:text-light transition-colors track-click">Contact</a>
                 </div>
-                <button id="mobileMenuBtn" class="md:hidden text-white" 
+                <button id="mobileMenuBtn" class="md:hidden text-white"
                         aria-expanded="false"
                         aria-controls="mobile-menu"
                         aria-label="Toggle menu">
@@ -1525,10 +1521,10 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div id="mobileMenu" 
-         class="mobile-menu fixed top-0 left-0 h-full w-64 z-50 md:hidden"
-         aria-label="Mobile navigation"
-         aria-hidden="true">
+    <div id="mobileMenu"
+        class="mobile-menu fixed top-0 left-0 h-full w-64 z-50 md:hidden"
+        aria-label="Mobile navigation"
+        aria-hidden="true">
         <div class="p-6">
             <div class="flex justify-between items-center mb-8">
                 <span class="text-white text-xl font-bold">Menu</span>
@@ -1538,14 +1534,14 @@
                 </button>
             </div>
             <div class="flex flex-col space-y-4">
-                <a href="index.html#transformation-journey" class="text-white hover:text-light transition-colors">AI Journey</a>
-                <a href="index.html#industry-solutions" class="text-white hover:text-light transition-colors">Industry Solutions</a>
-                <a href="index.html#products" class="text-white hover:text-light transition-colors">Products</a>
-                <a href="index.html#pricing" class="text-white hover:text-light transition-colors">Pricing</a>
-                <a href="index.html#education" class="text-white hover:text-light transition-colors">AI Education</a>
-                <a href="blogs.html" class="text-white hover:text-light transition-colors font-semibold">Blogs</a>
-                <a href="index.html#contact" class="text-white hover:text-light transition-colors">Contact</a>
-            </div>
+                <a id="mobile-nav-link-ai-journey" href="index.html#transformation-journey" class="text-white hover:text-light transition-colors track-click">AI Journey</a>
+                <a id="mobile-nav-link-industry-solutions" href="index.html#industry-solutions" class="text-white hover:text-light transition-colors track-click">Industry Solutions</a>
+                <a id="mobile-nav-link-products" href="index.html#products" class="text-white hover:text-light transition-colors track-click">Products</a>
+                <a id="mobile-nav-link-pricing" href="index.html#pricing" class="text-white hover:text-light transition-colors track-click">Pricing</a>
+                <a id="mobile-nav-link-education" href="index.html#education" class="text-white hover:text-light transition-colors track-click">AI Education</a>
+                <a id="mobile-nav-link-blogs" href="blogs.html" class="text-white hover:text-light transition-colors font-semibold track-click">Blogs</a>
+                <a id="mobile-nav-link-contact" href="index.html#contact" class="text-white hover:text-light transition-colors track-click">Contact</a>
+                </div>
         </div>
     </div>
 
@@ -1572,31 +1568,26 @@
                 <h2 class="text-xl lg:text-2xl text-gray-200 mb-12">
                     Custom AI Solutions for Traditional Businesses
                 </h2>
-
+        
                 <div class="flex flex-col sm:flex-row gap-4 mb-16">
-                    <a href="#transformation-journey" 
-                    class="button-primary px-8 py-4 rounded-xl text-white text-lg font-semibold 
-                            shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center" 
-                    aria-label="Start Your AI Transformation">
-                        Start Your AI Transformation
-                        <i class="fas fa-arrow-right ml-2"></i>
+                    <a id="hero-cta-start-journey" href="#transformation-journey"
+                       class="button-primary px-8 py-4 rounded-xl text-white text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center track-click">
+                       Start Your AI Transformation
+                       <i class="fas fa-arrow-right ml-2"></i>
                     </a>
-                    <a href="#products" 
-                    class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold 
-                            hover:bg-white hover:text-purple-700 transition-all duration-300 inline-flex items-center" 
-                    aria-label="Explore Our Solutions">
-                        Explore Our Solutions
-                        <i class="fas fa-chevron-down ml-2"></i>
+                    <a id="hero-cta-explore-solutions" href="#products"
+                       class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 inline-flex items-center track-click">
+                       Explore Our Solutions
+                       <i class="fas fa-chevron-down ml-2"></i>
                     </a>
                 </div>
-
-                <!-- Value Proposition Banner -->
+        
                 <div class="bg-white bg-opacity-90 p-6 rounded-xl shadow-lg backdrop-blur-sm value-prop-banner">
                     <p class="text-gray-800 mb-3">
                         We bridge the gap between traditional business processes and advanced AI implementation, making cutting-edge technology accessible and practical.
                     </p>
                     <p class="text-purple-700 font-medium">
-                        <i class="fas fa-lightbulb mr-2"></i> Don't know where to start with AI? We guide you every step of the way.
+                        <i class="fas fa-lightbulb mr-2"></i> Don't know where to start with AI? We guide you every step of the way. 
                     </p>
                 </div>
             </div>
@@ -2375,7 +2366,7 @@ displayInsights(result.insights);</code></pre>
         <!-- CTA -->
         <!-- Replace the CTA link with a button that triggers the modal -->
         <div class="text-center mt-12">
-            <button id="openAssessmentBtn" class="py-4 px-8 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg transform transition hover:-translate-y-1">
+            <button id="openAssessmentBtn" class="py-4 px-8 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg transform transition hover:-translate-y-1 track-click">
                 Find Where AI Can Help Your Industry!
             </button>
         </div>
@@ -2679,126 +2670,184 @@ displayInsights(result.insights);</code></pre>
         <!-- JavaScript for form handling - Reordered Process -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
+                // --- !! IMPORTANT: PASTE YOUR API GATEWAY SUBMISSION URL HERE !! ---
+                const SUBMISSION_API_URL = 'https://ztnkea3vz1.execute-api.ap-south-1.amazonaws.com/v1/submission'; // e.g., https://abc123xyz.execute-api.us-east-1.amazonaws.com/prod/submission
+                // Interaction URL will be added later if needed in other scripts
+        
                 const openBtn = document.getElementById('openAssessmentBtn');
-                const closeBtn = document.getElementById('closeModalBtn');
+                const closeBtn = document.getElementById('closeModalBtn'); // Assuming this ID exists on the close button inside modal
                 const modal = document.getElementById('assessmentModal');
-                const modalContent = modal.querySelector('.bg-white');
+                const modalContent = modal?.querySelector('.bg-white'); // Use optional chaining ?.
                 const form = document.getElementById('assessmentForm');
-                const toast = document.getElementById('toast');
-                
-                // Open modal
-                openBtn.addEventListener('click', function() {
-                    modal.classList.remove('hidden');
-                    document.body.classList.add('overflow-hidden'); // Prevent scrolling when modal is open
-                    
-                    // Scroll to top of modal when opening
-                    if (modalContent) {
-                        modalContent.scrollTop = 0;
-                    }
-                });
-                
-                // Close modal
-                closeBtn.addEventListener('click', function() {
-                    closeModal();
-                });
-                
-                // Close modal when clicking outside the content
-                modal.addEventListener('click', function(e) {
-                    if (e.target === modal) {
-                        closeModal();
-                    }
-                });
-                
-                // Prevent closing when clicking on modal content
-                modalContent.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                });
-                
-                // Function to close modal
-                function closeModal() {
-                    modal.classList.add('hidden');
-                    document.body.classList.remove('overflow-hidden');
-                }
-                
-                // Function to show toast
-                function showToast() {
-                    // Make sure toast exists
-                    if (!toast) {
-                        console.error('Toast element not found');
-                        return;
-                    }
-                    
-                    // Remove the class that keeps it off-screen
-                    toast.classList.remove('translate-x-full');
-                    
-                    // Hide toast after 5 seconds
-                    setTimeout(function() {
-                        toast.classList.add('translate-x-full');
-                    }, 8000);
-                }
-                
-                // Form submission
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form data
-                    const formData = new FormData(form);
-                    const formDataObj = {};
-                    
-                    formData.forEach((value, key) => {
-                        // Handle multi-select checkboxes (like businessVerticals[])
-                        if (key.includes('[]')) {
-                            const cleanKey = key.replace('[]', '');
-                            if (!formDataObj[cleanKey]) {
-                                formDataObj[cleanKey] = [];
-                            }
-                            formDataObj[cleanKey].push(value);
-                        } else {
-                            formDataObj[key] = value;
+                const toast = document.getElementById('toast'); // Assuming your toast element has id="toast"
+        
+                // --- Modal Opening/Closing Logic (Unchanged) ---
+                if (openBtn && modal) {
+                    openBtn.addEventListener('click', function() {
+                        modal.classList.remove('hidden');
+                        document.body.classList.add('overflow-hidden'); // Prevent scrolling
+        
+                        // Scroll to top of modal when opening
+                        if (modalContent) {
+                            modalContent.scrollTop = 0;
                         }
                     });
-                    
-                    console.log('Form data submitted:', formDataObj);
-                    
-                    // Add a loading state to the submit button
-                    const submitBtn = form.querySelector('button[type="submit"]');
-                    const originalText = submitBtn.innerHTML;
-                    submitBtn.disabled = true;
-                    submitBtn.innerHTML = `
-                        <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Processing...
-                    `;
-                    
-                    // Simulate form submission with a delay
-                    setTimeout(function() {
-                        // 1. First show toast notification
-                        showToast();
-                        
-                        // 2. Then close modal (after a small delay to let users see the toast)
-                        setTimeout(function() {
+                }
+        
+                // Function to close modal (defined here, usable below)
+                function closeModal() {
+                    if (modal) {
+                        modal.classList.add('hidden');
+                    }
+                    document.body.classList.remove('overflow-hidden');
+                }
+        
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', function() {
+                        closeModal();
+                    });
+                }
+        
+                if (modal) {
+                    // Close modal when clicking outside the content
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
                             closeModal();
-                            
-                            // 3. Reset form
-                            form.reset();
-                            
-                            // 4. Reset submit button
-                            submitBtn.disabled = false;
-                            submitBtn.innerHTML = originalText;
-                        }, 1500);
-                        
-                    }, 1500);
-                });
-                
-                // Add keyboard event to close modal with Escape key
+                        }
+                    });
+        
+                    // Prevent closing when clicking on modal content
+                    if (modalContent) {
+                        modalContent.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                        });
+                    }
+                }
+        
+                // Add keyboard event to close modal with Escape key (Unchanged)
                 document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                    if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
                         closeModal();
                     }
                 });
-            });
+        
+                // --- Toast Function (Unchanged, assuming CSS handles show/hide) ---
+                function showToast(message = "Form submitted successfully!", type = "success") { // Added parameters
+                    if (!toast) {
+                        console.error('Toast element (id="toast") not found');
+                        alert(message); // Fallback
+                        return;
+                    }
+                    // Optional: Update toast message/style based on parameters
+                     const toastMessageElement = toast.querySelector('p'); // Example selector
+                     if(toastMessageElement) toastMessageElement.textContent = message;
+                     // Add/remove classes for different types if needed (e.g., bg-green-500 vs bg-red-500)
+        
+                    toast.classList.remove('translate-x-full'); // Make visible
+        
+                    // Hide toast after delay (increased slightly)
+                    setTimeout(function() {
+                        toast.classList.add('translate-x-full');
+                    }, 5000); // Hide after 5 seconds
+                }
+        
+        
+                // --- Assessment Form Submission - EDITED ---
+                if (form) {
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+        
+                        // Optional: Add validation check here if needed
+                        // if (!validateForm(form)) { // Assuming validateForm function exists elsewhere
+                        //     alert("Please fill required fields.");
+                        //     return;
+                        // }
+        
+                        // Get form data (Unchanged)
+                        const formData = new FormData(form);
+                        const formDataObj = { formType: 'assessment' }; // Add form type identifier
+        
+                        formData.forEach((value, key) => {
+                            // Handle multi-select checkboxes (like businessVerticals[])
+                            if (key.endsWith('[]')) { // Use endsWith for safety
+                                const cleanKey = key.slice(0, -2); // Remove []
+                                if (!formDataObj[cleanKey]) {
+                                    formDataObj[cleanKey] = [];
+                                }
+                                formDataObj[cleanKey].push(value);
+                            } else {
+                                formDataObj[key] = value;
+                            }
+                        });
+        
+                        console.log('Form data prepared:', formDataObj);
+        
+                        // Add loading state to the submit button (Unchanged)
+                        const submitBtn = form.querySelector('button[type="submit"]');
+                        const originalText = submitBtn.innerHTML;
+                        submitBtn.disabled = true;
+                        submitBtn.innerHTML = `
+                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            Processing...
+                        `;
+        
+                        // --- *** EDITED PART: Replace setTimeout with fetch *** ---
+                        fetch(SUBMISSION_API_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(formDataObj) // Send collected data as JSON
+                        })
+                        .then(response => {
+                            // Check if the response status is OK (e.g., 200-299)
+                            if (!response.ok) {
+                                // If not OK, throw an error to be caught by .catch()
+                                // Optionally try to parse error message from response body
+                                 return response.json().then(errData => {
+                                     throw new Error(errData.message || `HTTP error ${response.status}`);
+                                 }).catch(() => { // Handle cases where error body isn't JSON
+                                      throw new Error(`HTTP error ${response.status}`);
+                                 });
+                            }
+                            return response.json(); // Parse the JSON response from Lambda
+                        })
+                        .then(data => {
+                            // --- Success ---
+                            console.log('Submission successful:', data);
+                            // 1. Show success toast
+                            showToast("Assessment submitted successfully!"); // Using the defined function
+                            // 2. Close modal (give a tiny delay for toast visibility if desired)
+                            setTimeout(function() {
+                                 closeModal(); // Using the defined function
+                                 form.reset(); // Reset form fields AFTER closing modal
+                            }, 300); // Small delay before closing modal
+        
+                        })
+                        .catch(error => {
+                            // --- Error ---
+                            console.error('Submission error:', error);
+                            // Show error feedback to the user
+                            showToast(`Submission failed: ${error.message}`, 'error'); // Show error using toast
+                            // You might not want to close the modal or reset the form on error
+                        })
+                        .finally(() => {
+                            // --- Always Run This (after success or error) ---
+                            // Reset submit button state
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalText;
+                        });
+                        // --- *** End of EDITED PART *** ---
+        
+                    }); // End form submit listener
+                } else {
+                    console.error('Assessment form (id="assessmentForm") not found.');
+                }
+        
+            }); // End DOMContentLoaded listener
         </script>
     </div>
 </section>
@@ -2870,14 +2919,14 @@ displayInsights(result.insights);</code></pre>
                     
                     <!-- Demo Buttons -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <a href="https://sirpi-57.github.io/InfinityAI-Jewelry-Website-Sample/" target="_blank" 
-                           class="flex items-center justify-center bg-purple-700 text-white py-3 px-6 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1">
+                        <a id="product-demo-website" href="https://sirpi-57.github.io/InfinityAI-Jewelry-Website-Sample/" target="_blank"
+                           class="flex items-center justify-center bg-purple-700 text-white py-3 px-6 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1 track-click">
                             <i class="fas fa-external-link-alt mr-2"></i>
                             <span>Try Demo Website</span>
                         </a>
-                        
-                        <a href="javascript:void(0)" onclick="showAdminLoginModal()" 
-                           class="flex items-center justify-center border-2 border-purple-700 text-purple-700 py-3 px-6 rounded-lg hover:bg-purple-50 hover:shadow-lg transition transform hover:-translate-y-1">
+                    
+                        <a id="product-demo-dashboard" href="javascript:void(0)" onclick="showAdminLoginModal()"
+                           class="flex items-center justify-center border-2 border-purple-700 text-purple-700 py-3 px-6 rounded-lg hover:bg-purple-50 hover:shadow-lg transition transform hover:-translate-y-1 track-click">
                             <i class="fas fa-cog mr-2"></i>
                             <span>Management Dashboard</span>
                         </a>
@@ -2974,7 +3023,7 @@ displayInsights(result.insights);</code></pre>
                     
                     <!-- Demo Button -->
                     <a href="#contact" 
-                       class="inline-flex items-center justify-center bg-purple-700 text-white py-3 px-8 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1">
+                    class="inline-flex items-center justify-center bg-purple-700 text-white py-3 px-8 rounded-lg hover:bg-purple-800 hover:shadow-lg transition transform hover:-translate-y-1 track-click">
                         <i class="fas fa-comments mr-2"></i>
                         <span>Request Demo Access</span>
                     </a>
@@ -2990,7 +3039,7 @@ displayInsights(result.insights);</code></pre>
             </p>
             
             <a href="#contact" 
-               class="inline-flex items-center justify-center bg-purple-700 text-white py-4 px-8 rounded-xl hover:bg-purple-800 hover:shadow-xl transition transform hover:-translate-y-1 text-lg font-medium">
+               class="inline-flex items-center justify-center bg-purple-700 text-white py-4 px-8 rounded-xl hover:bg-purple-800 hover:shadow-xl transition transform hover:-translate-y-1 text-lg font-medium track-click">
                 <i class="fas fa-lightbulb mr-2"></i>
                 <span>Know More</span>
             </a>
@@ -3022,11 +3071,11 @@ displayInsights(result.insights);</code></pre>
         
         <div class="flex justify-between gap-4">
             <button onclick="hideAdminLoginModal()" 
-                    class="w-1/2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300 transition">
+                    class="w-1/2 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-300 transition track-click">
                 Cancel
             </button>
             <button onclick="verifyAdminPassword()" 
-                    class="w-1/2 px-4 py-2 bg-purple-700 text-white rounded-lg hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition">
+                    class="w-1/2 px-4 py-2 bg-purple-700 text-white rounded-lg hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition track-click">
                 Login
             </button>
         </div>
@@ -3387,7 +3436,7 @@ document.head.insertAdjacentHTML('beforeend', `
 
         <!-- CTA -->
         <div class="text-center mt-16">
-            <a href="#contact" class="inline-block py-4 px-8 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-xl hover:shadow-lg transform transition hover:-translate-y-1">
+            <a href="#contact" class="inline-block py-4 px-8 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-xl hover:shadow-lg transform transition hover:-translate-y-1 track-click">
                 Contact Sales 
             </a>
         </div>
@@ -3495,13 +3544,13 @@ document.head.insertAdjacentHTML('beforeend', `
                 <!-- CTA Section -->
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="ai-education.html" 
-                    class="button-primary px-6 py-3 rounded-lg text-white text-center inline-block font-semibold"
+                    class="button-primary px-6 py-3 rounded-lg text-white text-center inline-block font-semibold track-click"
                     aria-label="Learn more about AI Education initiative">
                         Explore Our Programs
                     </a>
                     <a href="#contact" 
                     class="px-6 py-3 rounded-lg border-2 border-purple-600 text-purple-600 
-                         hover:bg-purple-600 hover:text-white transition-colors text-center font-semibold"
+                         hover:bg-purple-600 hover:text-white transition-colors text-center font-semibold track-click"
                     aria-label="Partner with us on AI education">
                         Partner With Us
                     </a>
@@ -3602,7 +3651,7 @@ document.head.insertAdjacentHTML('beforeend', `
             </div>
 
             <div class="text-center mt-12">
-                <a href="ai-education.html" class="inline-flex items-center text-purple-700 font-semibold hover:text-purple-900 transition-colors">
+                <a href="ai-education.html" class="inline-flex items-center text-purple-700 font-semibold hover:text-purple-900 transition-colors track-click">
                     View all educational programs
                     <i class="fas fa-arrow-right ml-2"></i>
                 </a>
@@ -3768,7 +3817,7 @@ document.head.insertAdjacentHTML('beforeend', `
                         <button type="submit" 
                                 class="w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
                                 aria-label="Send message">
-                            <span class="inline-flex items-center">
+                            <span class="inline-flex items-center track-click">
                                 <span>Send Message</span>
                                 <i class="fas fa-paper-plane ml-2"></i>
                                 <span class="loading-spinner ml-2 hidden">
@@ -3806,7 +3855,7 @@ document.head.insertAdjacentHTML('beforeend', `
                             <div>
                                 <h4 class="font-semibold mb-2">Call Us</h4>
                                 <p>
-                                    <a href="tel:+919994481257" class="text-purple-100 hover:text-white transition-colors">
+                                    <a href="tel:+919994481257" class="text-purple-100 hover:text-white transition-colors track-click">
                                         +91 9994481257
                                     </a>
                                 </p>
@@ -3822,12 +3871,12 @@ document.head.insertAdjacentHTML('beforeend', `
                             <div>
                                 <h4 class="font-semibold mb-2">Email Us</h4>
                                 <p>
-                                    <a href="mailto:infiniteaitechsol@gmail.com" class="text-purple-100 hover:text-white transition-colors block">
+                                    <a href="mailto:infiniteaitechsol@gmail.com" class="text-purple-100 hover:text-white transition-colors block track-click">
                                         infiniteaitechsol@gmail.com
                                     </a>
                                 </p>
                                 <p class="mt-1">
-                                    <a href="mailto:support@infiniteai.in" class="text-purple-100 hover:text-white transition-colors block">
+                                    <a href="mailto:support@infiniteai.in" class="text-purple-100 hover:text-white transition-colors block track-click">
                                         support@infiniteai.in
                                     </a>
                                 </p>
@@ -3856,7 +3905,7 @@ document.head.insertAdjacentHTML('beforeend', `
                     
                     <!-- Map or Image -->
                     <div class="mt-10">
-                        <div class="rounded-lg overflow-hidden h-40 bg-white bg-opacity-10 flex items-center justify-center">
+                        <div class="rounded-lg overflow-hidden h-40 bg-white bg-opacity-10 flex items-center justify-center track-click">
                             <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7126087069474!2d80.22!3d13.12!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA3JzEyLjAiTiA4MMKwMTMnMTIuMCJF!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
                                 width="100%" 
@@ -3871,159 +3920,7 @@ document.head.insertAdjacentHTML('beforeend', `
             </div>
         </div>
     </div>
-</section>
-
-<!-- Contact Form Script - Place this at the end of your body tag -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the contact form element
-    const form = document.getElementById('contactForm');
-    
-    if (!form) {
-        console.error('Contact form not found');
-        return;
-    }
-    
-    // Form submission handler - extremely simplified
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get the form data directly
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value;
-        const service = document.getElementById('service').value;
-        const message = document.getElementById('message').value;
-        const consent = document.getElementById('consent').checked;
-        
-        // Basic validation - just check for empty required fields
-        let isValid = true;
-        
-        // Reset any previous error styling
-        document.querySelectorAll('.border-red-500').forEach(el => {
-            el.classList.remove('border-red-500');
-        });
-        
-        document.querySelectorAll('[id$="-error"]').forEach(el => {
-            el.classList.add('hidden');
-        });
-        
-        // Check required fields
-        if (!name.trim()) {
-            document.getElementById('name').classList.add('border-red-500');
-            document.getElementById('name-error').classList.remove('hidden');
-            isValid = false;
-        }
-        
-        if (!email.trim()) {
-            document.getElementById('email').classList.add('border-red-500');
-            document.getElementById('email-error').classList.remove('hidden');
-            isValid = false;
-        }
-        
-        if (!service) {
-            document.getElementById('service').classList.add('border-red-500');
-            document.getElementById('service-error').classList.remove('hidden');
-            isValid = false;
-        }
-        
-        if (!message.trim()) {
-            document.getElementById('message').classList.add('border-red-500');
-            document.getElementById('message-error').classList.remove('hidden');
-            isValid = false;
-        }
-        
-        if (!consent) {
-            document.getElementById('consent').classList.add('border-red-500');
-            document.getElementById('consent-error').classList.remove('hidden');
-            isValid = false;
-        }
-        
-        if (!isValid) {
-            return;
-        }
-        
-        // Show loading state
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const spinner = submitBtn.querySelector('.loading-spinner');
-        
-        if (submitBtn) {
-            submitBtn.disabled = true;
-            submitBtn.querySelector('span:not(.loading-spinner)').textContent = 'Sending...';
-            
-            if (spinner) {
-                spinner.classList.remove('hidden');
-            }
-        }
-        
-        // Create data object for console output
-        const timestamp = new Date().toISOString();
-        const formDataObj = {
-            id: 'contact_' + Date.now(),
-            timestamp: timestamp,
-            name: name,
-            email: email,
-            phone: phone || null,
-            service: service,
-            message: message,
-            consent: consent,
-            status: 'new',
-            createdAt: timestamp,
-            updatedAt: timestamp
-        };
-        
-        // Log the form data to console as JSON
-        console.log('Form data (JSON format):');
-        console.log(JSON.stringify(formDataObj, null, 2));
-        
-        // Simulate submission delay
-        setTimeout(function() {
-            // Show success message
-            let successMsg = document.getElementById('form-success-message');
-            
-            if (!successMsg) {
-                successMsg = document.createElement('div');
-                successMsg.id = 'form-success-message';
-                successMsg.className = 'mt-6 p-4 bg-green-50 text-green-800 rounded-lg flex items-start';
-                successMsg.innerHTML = `
-                    <div class="mr-3 text-green-500 mt-1">
-                        <i class="fas fa-check-circle text-xl"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold mb-1">Message Sent Successfully!</h4>
-                        <p class="text-sm">Thank you for contacting us. We'll get back to you shortly.</p>
-                    </div>
-                `;
-                
-                form.parentNode.insertBefore(successMsg, form.nextSibling);
-            } else {
-                successMsg.classList.remove('hidden');
-            }
-            
-            // Reset form
-            form.reset();
-            
-            // Reset button state
-            if (submitBtn) {
-                submitBtn.disabled = false;
-                submitBtn.querySelector('span:not(.loading-spinner)').textContent = 'Send Message';
-                
-                if (spinner) {
-                    spinner.classList.add('hidden');
-                }
-            }
-            
-            // Hide success message after 5 seconds
-            setTimeout(function() {
-                if (successMsg) {
-                    successMsg.classList.add('hidden');
-                }
-            }, 5000);
-            
-        }, 1500); // 1.5 second delay to simulate API call
-    });
-});
-</script>
+</section>                                                                                                                          
 <!-- Footer Section - Redesigned to match site aesthetic -->
 <footer class="gradient-bg py-16 relative overflow-hidden" role="contentinfo">
     <!-- Background particle effect for consistency with header -->
@@ -4046,13 +3943,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="text-gray-300 mb-6">Transforming businesses through AI and AR innovation, creating unlimited possibilities for your digital transformation journey.</p>
                 <div class="space-y-3">
                     <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-                        <div class="w-8 h-8 rounded-lg bg-white bg-opacity-10 flex items-center justify-center mr-3 group-hover:bg-opacity-20 transition-all">
+                        <div class="w-8 h-8 rounded-lg bg-white bg-opacity-10 flex items-center justify-center mr-3 group-hover:bg-opacity-20 transition-all track-click">
                             <i class="fas fa-shield-alt text-purple-300"></i>
                         </div>
                         <span>Privacy Policy</span>
                     </a>
                     <a href="#" class="text-gray-300 hover:text-white transition-colors flex items-center group">
-                        <div class="w-8 h-8 rounded-lg bg-white bg-opacity-10 flex items-center justify-center mr-3 group-hover:bg-opacity-20 transition-all">
+                        <div class="w-8 h-8 rounded-lg bg-white bg-opacity-10 flex items-center justify-center mr-3 group-hover:bg-opacity-20 transition-all track-click">
                             <i class="fas fa-file-contract text-purple-300"></i>
                         </div>
                         <span>Terms of Service</span>
@@ -4065,31 +3962,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4 class="text-white text-lg font-semibold mb-5 border-b border-purple-500 pb-2 inline-block">Navigation</h4>
                 <ul class="text-gray-300 space-y-3">
                     <li>
-                        <a href="index.html#transformation-journey" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#transformation-journey" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-route mr-3 text-purple-300"></i>
                             <span>AI Journey</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#industry-solutions" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#industry-solutions" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-industry mr-3 text-purple-300"></i>
                             <span>Industry Solutions</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#products" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#products" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-box-open mr-3 text-purple-300"></i>
                             <span>Products</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#pricing" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#pricing" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-tags mr-3 text-purple-300"></i>
                             <span>Pricing</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#education" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#education" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-graduation-cap mr-3 text-purple-300"></i>
                             <span>AI Education</span>
                         </a>
@@ -4102,31 +3999,31 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4 class="text-white text-lg font-semibold mb-5 border-b border-purple-500 pb-2 inline-block">Company</h4>
                 <ul class="text-gray-300 space-y-3">
                     <li>
-                        <a href="aboutus.html" class="hover:text-white transition-colors flex items-center">
+                        <a href="aboutus.html" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-building mr-3 text-purple-300"></i>
                             <span>About Us</span>
                         </a>
                     </li>
                     <li>
-                        <a href="blogs.html" class="hover:text-white transition-colors flex items-center">
+                        <a href="blogs.html" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-blog mr-3 text-purple-300"></i>
                             <span>Blogs</span>
                         </a>
                     </li>
                     <li>
-                        <a href="index.html#contact" class="hover:text-white transition-colors flex items-center">
+                        <a href="index.html#contact" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-envelope mr-3 text-purple-300"></i>
                             <span>Contact</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white transition-colors flex items-center">
+                        <a href="#" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-user-friends mr-3 text-purple-300"></i>
                             <span>Our Partners</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white transition-colors flex items-center">
+                        <a href="#" class="hover:text-white transition-colors flex items-center track-click">
                             <i class="fas fa-map-marker-alt mr-3 text-purple-300"></i>
                             <span>Locations</span>
                         </a>
@@ -4150,7 +4047,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="fas fa-envelope"></i>
                         </div>
                         <button type="submit" 
-                                class="absolute right-0 top-0 bottom-0 px-4 rounded-r-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-colors"
+                                class="absolute right-0 top-0 bottom-0 px-4 rounded-r-lg bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 transition-colors track-click"
                                 aria-label="Subscribe to newsletter">
                             <i class="fas fa-paper-plane"></i>
                         </button>
@@ -4175,16 +4072,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="mt-6">
                     <p class="text-white text-sm font-semibold mb-3">Connect With Us</p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all" aria-label="LinkedIn">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all" aria-label="Twitter">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all" aria-label="Instagram">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all" aria-label="GitHub">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-white bg-opacity-10 flex items-center justify-center text-purple-300 hover:bg-opacity-20 hover:text-white transition-all track-click" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
@@ -4235,11 +4132,11 @@ document.addEventListener('DOMContentLoaded', function() {
             We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
         </p>
         <div class="flex space-x-4">
-            <button class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors"
+            <button class="px-4 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition-colors track-click"
                     id="acceptCookies">
                 Accept
             </button>
-            <button class="px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
+            <button class="px-4 py-2 border border-white rounded-lg hover:bg-white hover:text-gray-900 transition-colors track-click"
                     id="declineCookies">
                 Decline
             </button>
@@ -4250,7 +4147,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Improved Chat Widget with Modern UI -->
 <div id="rasa-chat-widget" class="fixed bottom-0 right-0 m-6 z-50">
     <!-- Chat Icon Button with Pulse Effect -->
-    <button id="chat-toggle" class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xl flex items-center justify-center transform transition-transform hover:scale-110 relative">
+    <button id="chat-toggle" class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xl flex items-center justify-center transform transition-transform hover:scale-110 relative track-click">
         <span class="absolute animate-ping w-full h-full rounded-full bg-purple-400 opacity-50"></span>
         <i class="fas fa-comment-dots text-2xl relative z-10"></i>
     </button>
@@ -4264,7 +4161,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <i class="fas fa-gem text-purple-600 text-lg"></i>
                 </div>
                 <div>
-                    <h3 class="font-bold text-lg">Diya AI</h3>
+                    <h3 class="font-bold text-lg">Diya AI (Demo Chatbot)</h3>
                     <p class="text-xs text-purple-200">Jewelry Shopping Assistant</p>
                 </div>
             </div>
@@ -4509,7 +4406,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const typingIndicator = document.getElementById('typing-indicator');
         
         // Replace with your actual Rasa endpoint
-        const RASA_ENDPOINT = 'https://981d-13-71-3-97.ngrok-free.app';
+        const RASA_ENDPOINT = 'https://1210-13-71-3-103.ngrok-free.app';
         
         let sessionId = generateSessionId();
         let isMinimized = false;
@@ -4518,7 +4415,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chatToggle.addEventListener('click', () => {
             chatContainer.classList.toggle('hidden');
             if (chatMessages.children.length === 0) {
-                addBotMessage("Hey there! 👋 Welcome to Infinite AI! Type 'Hello' to start your jewelry shopping experience!");
+                addBotMessage("Hey there! 👋 Welcome to Infinite AI Custom Demo Chatbot! Type 'Hello' to start your jewelry shopping experience!");
             }
         });
         
@@ -4806,1011 +4703,1010 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 </script>
     
-<!-- JavaScript -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Mobile menu functionality
-        const mobileMenuButton = document.querySelector('.md\\:hidden');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        const mobileMenuCloseButton = document.querySelector('.mobile-menu button');
-        
-        function toggleMobileMenu(show) {
-            mobileMenu.classList.toggle('active', show);
-            mobileMenu.setAttribute('aria-hidden', !show);
-            if (show) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
+    // Define API URLs globally so they're accessible everywhere
+const SUBMISSION_API_URL = 'https://ztnkea3vz1.execute-api.ap-south-1.amazonaws.com/v1/submission';
+const INTERACTION_API_URL = 'https://ztnkea3vz1.execute-api.ap-south-1.amazonaws.com/v1/interaction';
+
+// Generate a session ID that persists for this browser session
+if (!window.sessionId) {
+    window.sessionId = 'session_' + Math.random().toString(36).substring(2, 15);
+    console.log('Created new session ID:', window.sessionId);
+}
+
+// Global track interaction function 
+function trackInteraction(eventType, elementId, additionalData = {}) {
+    // Create the interaction data object with all necessary information
+    const interactionData = {
+        sessionId: window.sessionId,
+        timestamp: new Date().toISOString(),
+        eventType: eventType,
+        elementId: elementId,
+        url: window.location.href,
+        path: window.location.pathname,
+        referrer: document.referrer || null,
+        userAgent: navigator.userAgent,
+        screenWidth: window.innerWidth,
+        screenHeight: window.innerHeight,
+        ...additionalData
+    };
+    
+    console.log('Tracking interaction:', interactionData);
+    
+    // Send to AWS API Gateway endpoint
+    fetch(INTERACTION_API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(interactionData)
+    })
+    .then(response => {
+        console.log(`API response status: ${response.status} ${response.statusText}`);
+        if (!response.ok) {
+            console.warn('Interaction tracking API returned error status');
+        }
+        return response.text(); // Get raw text first for debugging
+    })
+    .then(text => {
+        console.log('Raw API response:', text);
+        // Try to parse as JSON if there's content
+        if (text) {
+            try {
+                return JSON.parse(text);
+            } catch (e) {
+                console.warn('Error parsing API response as JSON:', e);
+                return null;
             }
         }
+        return null;
+    })
+    .then(data => {
+        if (data) console.log('Interaction tracked successfully:', data);
+    })
+    .catch(error => {
+        console.error('Error sending interaction:', error);
+    });
+}
 
-        mobileMenuButton?.addEventListener('click', () => toggleMobileMenu(true));
-        mobileMenuCloseButton?.addEventListener('click', () => toggleMobileMenu(false));
+// Tab switching function - defined globally so it can be called by onclick
+function switchTab(tabId) {
+    console.log("Switching to tab (global function):", tabId);
+    const tabButtons = document.querySelectorAll('#industry-tabs .tab-btn');
+    const tabPanes = document.querySelectorAll('#tab-content .tab-pane');
 
-        // Form validation
-        function validateForm(form) {
-            const requiredFields = form.querySelectorAll('[required]');
-            let isValid = true;
+    if (!tabButtons.length || !tabPanes.length) {
+        console.error("Tab buttons or panes not found when switchTab was called.");
+        return;
+    }
 
-            requiredFields.forEach(field => {
-                const errorElement = document.getElementById(`${field.id}-error`);
-                if (!errorElement) return;
+    // Track tab switch interaction
+    trackInteraction('tabSwitch', `industry-${tabId}`, {
+        tabId: tabId,
+        section: 'industry-solutions'
+    });
 
-                if (!field.value.trim()) {
-                    errorElement.classList.remove('hidden');
-                    field.setAttribute('aria-invalid', 'true');
-                    isValid = false;
-                } else if (field.type === 'email' && !isValidEmail(field.value)) {
-                    errorElement.classList.remove('hidden');
-                    field.setAttribute('aria-invalid', 'true');
-                    isValid = false;
+    tabButtons.forEach(btn => {
+        const isActive = btn.getAttribute('data-tab') === tabId;
+        btn.classList.toggle('active', isActive);
+        btn.classList.toggle('bg-purple-800', isActive); // Active style
+        btn.classList.toggle('bg-gray-800', !isActive); // Inactive style
+        btn.setAttribute('aria-selected', isActive);
+    });
+
+    tabPanes.forEach(pane => {
+        const isTargetPane = pane.id === `${tabId}-tab`;
+        pane.classList.toggle('hidden', !isTargetPane);
+        pane.classList.remove('active', 'fade-in'); // Reset animation class always
+        if (isTargetPane) {
+            // Optionally add animation class after a short delay
+            setTimeout(() => pane.classList.add('active', 'fade-in'), 50);
+        }
+    });
+    console.log("Finished switching to tab:", tabId);
+}
+
+// Admin modal functions (defined globally for onclick attributes)
+function showAdminLoginModal() {
+    const adminLoginModal = document.getElementById('adminLoginModal');
+    if (adminLoginModal) {
+        adminLoginModal.classList.remove('hidden');
+        document.getElementById('adminPassword')?.focus();
+        document.body.style.overflow = 'hidden';
+        trackInteraction('modalOpen', 'admin-login-modal');
+    }
+}
+
+function hideAdminLoginModal() {
+    const adminLoginModal = document.getElementById('adminLoginModal');
+    if (adminLoginModal) {
+        adminLoginModal.classList.add('hidden');
+        if (document.getElementById('adminPassword')) {
+            document.getElementById('adminPassword').value = '';
+        }
+        document.body.style.overflow = '';
+        trackInteraction('modalClose', 'admin-login-modal');
+    }
+}
+
+function verifyAdminPassword() {
+    const password = document.getElementById('adminPassword')?.value;
+    
+    if (password === 'admin123') {
+        // Password correct
+        window.open('https://sirpi-57.github.io/jewelry-management-dashboard/', '_blank');
+        hideAdminLoginModal();
+        trackInteraction('adminLogin', 'success');
+    } else {
+        // Password incorrect - shake the input
+        const input = document.getElementById('adminPassword');
+        input.classList.add('shake-animation');
+        setTimeout(() => {
+            input.classList.remove('shake-animation');
+        }, 500);
+        
+        // Error message
+        input.style.borderColor = '#EF4444';
+        input.style.backgroundColor = 'rgba(254, 226, 226, 0.4)';
+        
+        // Reset after 2 seconds
+        setTimeout(() => {
+            input.style.borderColor = '';
+            input.style.backgroundColor = '';
+        }, 2000);
+        
+        trackInteraction('adminLogin', 'failed');
+    }
+}
+
+// Demo click tracking function
+function trackDemoClick(demoType) {
+    console.log(`Demo clicked: ${demoType}`);
+    trackInteraction('demoClick', demoType, {
+        section: 'products',
+        demoType: demoType
+    });
+}
+
+// Main DOMContentLoaded Listener
+document.addEventListener('DOMContentLoaded', function() {
+    // Track page load
+    trackInteraction('pageView', 'initial-load', {
+        title: document.title,
+        loadTime: window.performance ? Math.round(performance.now()) : null
+    });
+
+    // Helper Functions
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    function validateForm(form) {
+        const requiredFields = form.querySelectorAll('[required]');
+        let isValid = true;
+        form.querySelectorAll('.border-red-500').forEach(el => el.classList.remove('border-red-500'));
+        form.querySelectorAll('.form-error-message').forEach(el => el.classList.add('hidden'));
+
+        requiredFields.forEach(field => {
+            let fieldValid = true;
+            const errorElementId = `${field.id}-error`;
+            const errorElement = form.querySelector(`#${errorElementId}`);
+
+            if (field.type === 'checkbox' && !field.checked) { fieldValid = false; }
+            else if (field.type !== 'checkbox' && !field.value.trim()) { fieldValid = false; }
+            else if (field.type === 'email' && !isValidEmail(field.value)) { fieldValid = false; }
+
+            if (!fieldValid) {
+                isValid = false;
+                field.classList.add('border-red-500');
+                field.setAttribute('aria-invalid', 'true');
+                if (errorElement) {
+                     errorElement.classList.remove('hidden');
+                     errorElement.classList.add('form-error-message');
+                }
+            } else {
+                field.removeAttribute('aria-invalid');
+                if (errorElement) errorElement.classList.add('hidden');
+            }
+        });
+        return isValid;
+    }
+
+    const assessmentModal = document.getElementById('assessmentModal');
+    function closeModal() { // Specific to Assessment Modal
+        if (assessmentModal) assessmentModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+    }
+
+    const toastElement = document.getElementById('toast');
+    function showToast(message = "Success!", type = "success") {
+         if (!toastElement) { console.error('Toast element (id="toast") not found'); alert(message); return; }
+         const toastMessageElement = toastElement.querySelector('p');
+         if(toastMessageElement) toastMessageElement.textContent = message;
+         toastElement.classList.remove('bg-red-600', 'bg-green-600', 'from-purple-600', 'to-indigo-600');
+         if (type === 'error') { toastElement.classList.add('bg-red-600'); }
+         else { toastElement.classList.add('bg-gradient-to-r', 'from-purple-600', 'to-indigo-600'); }
+         toastElement.classList.remove('translate-x-full');
+         setTimeout(() => { toastElement.classList.add('translate-x-full'); }, 5000);
+    }
+
+    // Mobile Menu Functionality
+    const mobileMenuButton = document.querySelector('.md\\:hidden');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileMenuCloseButton = mobileMenu?.querySelector('button');
+
+    function toggleMobileMenu(show) {
+         if (!mobileMenu) return;
+         mobileMenu.classList.toggle('active', show);
+         mobileMenu.setAttribute('aria-hidden', !show);
+         document.body.style.overflow = show ? 'hidden' : '';
+         
+         // Track menu toggle
+         if (show) {
+            trackInteraction('menuOpen', 'mobile-menu');
+         } else {
+            trackInteraction('menuClose', 'mobile-menu');
+         }
+    }
+    
+    if (mobileMenuButton) {
+        mobileMenuButton.addEventListener('click', () => {
+            toggleMobileMenu(true);
+        });
+    }
+    
+    if (mobileMenuCloseButton) {
+        mobileMenuCloseButton.addEventListener('click', () => {
+            toggleMobileMenu(false);
+        });
+    }
+    
+    if (mobileMenu) {
+        mobileMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu(false);
+                // Navigation tracking happens through the track-click class
+            });
+        });
+    }
+
+    // Contact Form Handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateForm(this)) {
+                trackInteraction('formValidationFailed', 'contact-form');
+                return;
+            }
+            
+            const nameInput = this.querySelector('#name');
+            const emailInput = this.querySelector('#email');
+            const phoneInput = this.querySelector('#phone');
+            const serviceInput = this.querySelector('#service');
+            const messageInput = this.querySelector('#message');
+            const consentInput = this.querySelector('#consent');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalButtonHtml = submitBtn?.innerHTML || 'Send Message';
+            
+            // Create data for submission
+            const contactData = {
+                formType: 'contact',
+                timestamp: new Date().toISOString(),
+                name: nameInput?.value?.trim() || '',
+                email: emailInput?.value?.trim() || '',
+                phone: phoneInput?.value?.trim() || '',
+                service: serviceInput?.value || '',
+                message: messageInput?.value?.trim() || '',
+                consent: consentInput?.checked || false,
+                url: window.location.href,
+                sessionId: window.sessionId
+            };
+            
+            // Update button to loading state
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin mr-2"></i>Sending...';
+            }
+            
+            // Track form submission attempt
+            trackInteraction('formSubmit', 'contact-form', { 
+                service: contactData.service 
+            });
+            
+            // Send form data to API
+            fetch(SUBMISSION_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(contactData)
+            })
+            .then(response => {
+                console.log(`Contact form API response status: ${response.status}`);
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(text || `HTTP error ${response.status}`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Contact form success:', data);
+                this.reset();
+                showToast('Message sent successfully!');
+                
+                // Track successful submission
+                trackInteraction('formSubmitSuccess', 'contact-form');
+                
+                // Show success message if you have a dedicated element for it
+                const successMsg = document.getElementById('form-success-message');
+                if (successMsg) {
+                    successMsg.classList.remove('hidden');
+                    setTimeout(() => successMsg.classList.add('hidden'), 5000);
+                }
+            })
+            .catch(error => {
+                console.error('Contact form error:', error);
+                showToast(`Submission failed: ${error.message}`, 'error');
+                
+                // Track failed submission
+                trackInteraction('formSubmitError', 'contact-form', {
+                    errorMessage: error.message
+                });
+            })
+            .finally(() => {
+                // Restore button state
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalButtonHtml;
+                }
+            });
+        });
+    } else { 
+        console.log('Contact form not found'); 
+    }
+
+    // Newsletter Form Handler
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterCheckbox = newsletterForm?.querySelector('input[type="checkbox"]');
+    const newsletterCheckboxSvg = newsletterForm?.querySelector('svg');
+
+    if (newsletterForm) {
+        if (newsletterCheckbox && newsletterCheckboxSvg) {
+            newsletterCheckbox.addEventListener('change', function() {
+                newsletterCheckboxSvg.classList.toggle('hidden', !this.checked);
+            });
+        }
+        
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const emailInput = this.querySelector('#newsletter-email');
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalButtonHtml = submitBtn?.innerHTML || '<i class="fas fa-paper-plane"></i>';
+            
+            if (!emailInput || !emailInput.value.trim() || (newsletterCheckbox && !newsletterCheckbox.checked)) {
+                showToast('Please enter a valid email and agree to the terms.', 'error');
+                trackInteraction('formValidationFailed', 'newsletter-form');
+                return;
+            }
+            
+            // Create data for submission
+            const newsletterData = {
+                formType: 'newsletter',
+                timestamp: new Date().toISOString(),
+                email: emailInput.value.trim(),
+                consent: newsletterCheckbox?.checked || false,
+                url: window.location.href,
+                sessionId: window.sessionId
+            };
+            
+            // Update button to loading state
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i>';
+            }
+            
+            // Track newsletter signup attempt
+            trackInteraction('formSubmit', 'newsletter-form');
+            
+            // Send form data to API
+            fetch(SUBMISSION_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newsletterData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(text || `HTTP error ${response.status}`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Newsletter success:', data);
+                this.reset();
+                
+                if (newsletterCheckboxSvg) {
+                    newsletterCheckboxSvg.classList.add('hidden');
+                }
+                
+                emailInput.value = '';
+                emailInput.placeholder = 'Subscribed successfully!';
+                
+                if (submitBtn) {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i>';
+                }
+                
+                // Track successful submission
+                trackInteraction('formSubmitSuccess', 'newsletter-form');
+                
+                // Restore button after delay
+                setTimeout(() => {
+                    if (submitBtn) {
+                        submitBtn.innerHTML = originalButtonHtml;
+                    }
+                }, 2000);
+            })
+            .catch(error => {
+                console.error('Newsletter error:', error);
+                showToast(`Subscription failed: ${error.message}`, 'error');
+                
+                // Track failed submission
+                trackInteraction('formSubmitError', 'newsletter-form', {
+                    errorMessage: error.message
+                });
+                
+                // Restore button immediately
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = originalButtonHtml;
+                }
+            });
+        });
+    } else { 
+        console.log('Newsletter form not found'); 
+    }
+
+    // Assessment Form Handler
+    const assessmentForm = document.getElementById('assessmentForm');
+    let assessmentSubmitBtn = assessmentForm?.querySelector('button[type="submit"]');
+    let assessmentOriginalButtonHtml = assessmentSubmitBtn?.innerHTML || 'Submit Assessment';
+
+    if (assessmentForm) {
+        assessmentSubmitBtn = assessmentForm.querySelector('button[type="submit"]');
+        assessmentOriginalButtonHtml = assessmentSubmitBtn?.innerHTML || 'Submit Assessment';
+
+        assessmentForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateForm(this)) {
+                showToast('Please fill in all required fields.', 'error');
+                trackInteraction('formValidationFailed', 'assessment-form');
+                return;
+            }
+
+            const formData = new FormData(assessmentForm);
+            const assessmentData = { 
+                formType: 'assessment',
+                timestamp: new Date().toISOString(),
+                url: window.location.href,
+                sessionId: window.sessionId
+            };
+            
+            // Process form data
+            formData.forEach((value, key) => {
+                // Handle multi-select checkboxes
+                if (key.endsWith('[]')) {
+                    const cleanKey = key.slice(0, -2);
+                    if (!assessmentData[cleanKey]) {
+                        assessmentData[cleanKey] = [];
+                    }
+                    assessmentData[cleanKey].push(value);
                 } else {
-                    errorElement.classList.add('hidden');
-                    field.removeAttribute('aria-invalid');
+                    assessmentData[key] = value;
                 }
             });
 
-            return isValid;
-        }
-
-
-        // Contact form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm?.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            if (!validateForm(this)) return;
-
-            const submitButton = this.querySelector('button[type="submit"]');
-            const spinner = submitButton.querySelector('.loading-spinner');
+            // Update button to loading state
+            if (assessmentSubmitBtn) {
+                assessmentSubmitBtn.disabled = true;
+                assessmentSubmitBtn.innerHTML = `
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Processing...
+                `;
+            }
             
-            try {
-                submitButton.disabled = true;
-                spinner.classList.remove('hidden');
+            // Track assessment submission attempt
+            trackInteraction('formSubmit', 'assessment-form', {
+                industry: assessmentData.industry || null
+            });
 
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1500));
-
-                // Success handling
+            // Send form data to API
+            fetch(SUBMISSION_API_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(assessmentData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => {
+                        throw new Error(text || `HTTP error ${response.status}`);
+                    });
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Assessment Success:', data);
+                closeModal();
                 this.reset();
-                alert('Thank you for your message. We will get back to you soon!');
-            } catch (error) {
-                console.error('Form submission error:', error);
-                alert('There was an error submitting the form. Please try again.');
-            } finally {
-                submitButton.disabled = false;
-                spinner.classList.add('hidden');
+                showToast('Assessment submitted successfully!');
+                
+                // Track successful submission
+                trackInteraction('formSubmitSuccess', 'assessment-form');
+            })
+            .catch(error => {
+                console.error('Assessment Error:', error);
+                showToast(`Assessment submission failed: ${error.message}`, 'error');
+                
+                // Track failed submission
+                trackInteraction('formSubmitError', 'assessment-form', {
+                    errorMessage: error.message
+                });
+            })
+            .finally(() => {
+                // Restore button state
+                if (assessmentSubmitBtn) {
+                    assessmentSubmitBtn.disabled = false;
+                    assessmentSubmitBtn.innerHTML = assessmentOriginalButtonHtml;
+                }
+            });
+        });
+    } else { 
+        console.log('Assessment form not found'); 
+    }
+
+    // Assessment Modal Opening Logic
+    // Assessment Modal Opening Logic
+    const openAssessmentBtn = document.getElementById('openAssessmentBtn');
+    if (openAssessmentBtn && assessmentModal) {
+        openAssessmentBtn.addEventListener('click', function() {
+            assessmentModal.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            
+            // Track modal opening
+            trackInteraction('modalOpen', 'assessment-modal');
+        });
+        
+        // Add close button functionality for the modal
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', function() {
+                closeModal();
+                trackInteraction('modalClose', 'assessment-modal', { method: 'button' });
+            });
+        }
+        
+        // Close modal when clicking outside
+        assessmentModal.addEventListener('click', function(e) {
+            if (e.target === assessmentModal) {
+                closeModal();
+                trackInteraction('modalClose', 'assessment-modal', { method: 'outside-click' });
             }
         });
-
-        // Newsletter form submission
-        const newsletterForm = document.getElementById('newsletterForm');
-        newsletterForm?.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            if (!validateForm(this)) return;
-
-            try {
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1000));
-                this.reset();
-                alert('Thank you for subscribing to our newsletter!');
-            } catch (error) {
-                console.error('Newsletter subscription error:', error);
-                alert('There was an error subscribing. Please try again.');
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !assessmentModal.classList.contains('hidden')) {
+                closeModal();
+                trackInteraction('modalClose', 'assessment-modal', { method: 'escape-key' });
             }
         });
+    }
 
-        // Back to top button
-        const backToTopButton = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
+    // Back to Top Button
+    const backToTopButton = document.getElementById('backToTop');
+    if (backToTopButton) {
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
                 backToTopButton.classList.remove('opacity-0', 'invisible');
             } else {
                 backToTopButton.classList.add('opacity-0', 'invisible');
             }
         });
-
-        backToTopButton?.addEventListener('click', () => {
+        
+        // Scroll to top when clicked
+        backToTopButton.addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
+            trackInteraction('backToTop', 'back-to-top-button');
         });
+    }
 
-        // Cookie consent
-        const cookieConsent = document.getElementById('cookieConsent');
-        const acceptCookies = document.getElementById('acceptCookies');
-        const declineCookies = document.getElementById('declineCookies');
-
-        if (!localStorage.getItem('cookieConsent')) {
-            cookieConsent?.classList.remove('hidden');
+    // Cookie Consent
+    const cookieConsentBanner = document.getElementById('cookieConsent');
+    const acceptCookiesButton = document.getElementById('acceptCookies');
+    const declineCookiesButton = document.getElementById('declineCookies');
+    
+    // Check if consent has been given before
+    const hasConsent = localStorage.getItem('cookieConsent') === 'accepted';
+    
+    if (cookieConsentBanner && acceptCookiesButton && declineCookiesButton) {
+        // Show banner if consent not given
+        if (!hasConsent) {
+            cookieConsentBanner.classList.remove('hidden');
+            trackInteraction('cookieBannerShow', 'cookie-consent-banner');
         }
-
-        acceptCookies?.addEventListener('click', () => {
+        
+        // Accept button
+        acceptCookiesButton.addEventListener('click', function() {
             localStorage.setItem('cookieConsent', 'accepted');
-            cookieConsent.classList.add('hidden');
+            cookieConsentBanner.classList.add('hidden');
+            trackInteraction('cookieConsent', 'accept-cookies');
         });
-
-        declineCookies?.addEventListener('click', () => {
+        
+        // Decline button
+        declineCookiesButton.addEventListener('click', function() {
             localStorage.setItem('cookieConsent', 'declined');
-            cookieConsent.classList.add('hidden');
+            cookieConsentBanner.classList.add('hidden');
+            trackInteraction('cookieConsent', 'decline-cookies');
         });
+    }
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+    // Smooth Scrolling for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            
+            // Only handle actual anchor links (not "#" used for JS actions)
+            if (targetId.length > 1) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
                     });
-                    // Close mobile menu if open
-                    toggleMobileMenu(false);
+                    
+                    // We don't track here because these links have track-click class
                 }
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
+            }
         });
     });
 
-    // Add this to your existing script section
-    document.getElementById('jewelry-management-btn').addEventListener('click', function() {
-        document.getElementById('admin-login-modal').classList.remove('hidden');
-    });
+    // Admin Login Modal Listeners
+    // These use the global functions defined outside DOMContentLoaded
+    const jewelryMgmtBtn = document.getElementById('product-demo-dashboard');
+    const cancelAdminLoginBtn = document.getElementById('closeModalBtn');
+    const loginAdminBtn = document.getElementById('login-button');
+    const adminPasswordInput = document.getElementById('adminPassword');
     
-    document.getElementById('cancel-btn').addEventListener('click', function() {
-        document.getElementById('admin-login-modal').classList.add('hidden');
-        document.getElementById('admin-password').value = '';
-    });
+    // Note: The actual click event for jewelryMgmtBtn is handled via onclick in HTML
+    if (cancelAdminLoginBtn) {
+        cancelAdminLoginBtn.addEventListener('click', hideAdminLoginModal);
+    }
     
-    document.getElementById('login-btn').addEventListener('click', function() {
-        const password = document.getElementById('admin-password').value;
-        // Change 'admin123' to your desired password
-        if (password === 'admin123') {
-            window.open('https://sirpi-57.github.io/jewelry-management-dashboard/', '_blank');
-            document.getElementById('admin-login-modal').classList.add('hidden');
-            document.getElementById('admin-password').value = '';
-        } else {
-            alert('Incorrect password. Please try again.');
-        }
-    });
+    if (loginAdminBtn) {
+        loginAdminBtn.addEventListener('click', verifyAdminPassword);
+    }
     
-    // Enter key submission
-    document.getElementById('admin-password').addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') document.getElementById('login-btn').click();
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Ensure images are loaded with fallbacks
-        const traditionalImg = document.querySelector('.bg-image.traditional');
-        const aiImg = document.querySelector('.bg-image.ai-powered');
-        
-        if (traditionalImg && !traditionalImg.complete) {
-            traditionalImg.src = "https://via.placeholder.com/1920x1080/240046/ffffff?text=Traditional+Business";
-        }
-        
-        if (aiImg && !aiImg.complete) {
-            aiImg.src = "https://via.placeholder.com/1920x1080/7B2CBF/ffffff?text=AI-Powered+Business";
-        }
-        
-        // Add 3D rotation to infinity symbol animation
-        document.head.insertAdjacentHTML('beforeend', `
-            <style>
-                .infinity-symbol {
-                    animation: infinitySymbolLoop 20s infinite, rotate3D 1.5s ease-in-out infinite;
-                    animation-delay: 0s, 6s;
-                }
-                
-                @keyframes rotate3D {
-                    0% { transform: scale(1) rotateY(0deg); }
-                    50% { transform: scale(1.5) rotateY(180deg); }
-                    100% { transform: scale(1) rotateY(360deg); }
-                }
-            </style>
-        `);
-        
-        // Smooth scrolling for the "Explore Our Solutions" button
-        const exploreSolutionsBtn = document.querySelector('a[href="#solutions"]');
-        
-        if (exploreSolutionsBtn) {
-            exploreSolutionsBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const solutionsSection = document.querySelector('#solutions');
-                
-                if (solutionsSection) {
-                    solutionsSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        }
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Animate timeline items as they scroll into view
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        
-        function checkScroll() {
-            timelineItems.forEach(item => {
-                const itemTop = item.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (itemTop < windowHeight * 0.8) {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                }
-            });
-        }
-        
-        // Set initial state for animation
-        timelineItems.forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(20px)';
-            item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        });
-        
-        // Check initial position
-        checkScroll();
-        
-        // Listen for scroll events
-        window.addEventListener('scroll', checkScroll);
-        
-        // Add hover effects for tech tags
-        const techTags = document.querySelectorAll('.tech-tag');
-        techTags.forEach(tag => {
-            tag.addEventListener('mouseover', function() {
-                this.style.transform = 'translateY(-5px)';
-                this.style.boxShadow = '0 2px 5px rgba(123, 44, 191, 0.2)';
-            });
-            
-            tag.addEventListener('mouseout', function() {
-                this.style.transform = '';
-                this.style.boxShadow = '';
-            });
-        });
-        
-        // Add syntax highlighting and typing effect for code
-        const codeBlock = document.querySelector('.code-block code');
-        if (codeBlock) {
-            // Simple syntax highlighting
-            const content = codeBlock.innerHTML;
-            const highlighted = content
-                .replace(/\/\/(.*)/g, '<span class="comment">$&</span>')
-                .replace(/import|const|await|new|from/g, '<span class="keyword">$&</span>')
-                .replace(/'[^']*'/g, '<span class="string">$&</span>')
-                .replace(/InfiniteAI|analyze|displayInsights/g, '<span class="function">$&</span>')
-                .replace(/ai|result|customerInput/g, '<span class="variable">$&</span>');
-            
-            codeBlock.innerHTML = highlighted;
-            
-            // Create typing animation
-            const codeLines = codeBlock.innerHTML.split('\n');
-            codeBlock.innerHTML = '';
-            
-            codeLines.forEach((line, index) => {
-                const lineElement = document.createElement('div');
-                lineElement.innerHTML = line;
-                lineElement.style.width = '0';
-                lineElement.style.whiteSpace = 'nowrap';
-                lineElement.style.overflow = 'hidden';
-                lineElement.style.animation = `codeTyping 1s ${index * 0.15}s forwards`;
-                codeBlock.appendChild(lineElement);
-            });
-        }
-        
-        // Interactive elements for the integration methods
-        const integrationMethods = document.querySelectorAll('.integration-method');
-        integrationMethods.forEach(method => {
-            method.addEventListener('mouseenter', function() {
-                this.style.transform = 'scale(1.03)';
-                this.style.transition = 'transform 0.3s ease';
-                
-                // Add pulsing effect to icon
-                const icon = this.querySelector('.method-icon');
-                if (icon) {
-                    icon.style.animation = 'pulse 1.5s infinite';
-                }
-            });
-            
-            method.addEventListener('mouseleave', function() {
-                this.style.transform = 'scale(1)';
-                
-                // Remove pulsing effect
-                const icon = this.querySelector('.method-icon');
-                if (icon) {
-                    icon.style.animation = '';
-                }
-            });
-        });
-        
-        // Add pulse animation if not already in CSS
-        if (!document.getElementById('pulse-keyframes')) {
-            const styleSheet = document.createElement('style');
-            styleSheet.id = 'pulse-keyframes';
-            styleSheet.innerHTML = `
-                @keyframes pulse {
-                    0% { transform: scale(1); }
-                    50% { transform: scale(1.1); }
-                    100% { transform: scale(1); }
-                }
-                
-                @keyframes codeTyping {
-                    from { width: 0; }
-                    to { width: 100%; }
-                }
-            `;
-            document.head.appendChild(styleSheet);
-        }
-        
-        // Budget scale interactions
-        const budgetPoints = document.querySelectorAll('.budget-point');
-        budgetPoints.forEach(point => {
-            point.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px)';
-                this.style.transition = 'transform 0.3s ease';
-                
-                // Highlight the budget label
-                const label = this.querySelector('.budget-label');
-                if (label) {
-                    label.style.boxShadow = '0 4px 8px rgba(123, 44, 191, 0.3)';
-                    label.style.transform = 'scale(1.05)';
-                    label.style.transition = 'all 0.3s ease';
-                }
-            });
-            
-            point.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                
-                // Reset highlight
-                const label = this.querySelector('.budget-label');
-                if (label) {
-                    label.style.boxShadow = '';
-                    label.style.transform = '';
-                }
-            });
-        });
-        
-        // Smooth scrolling for CTA button
-        const ctaButton = document.querySelector('.cta-container a[href="#contact"]');
-        if (ctaButton) {
-            ctaButton.addEventListener('click', function(e) {
-                e.preventDefault();
-                const contactSection = document.querySelector('#contact');
-                if (contactSection) {
-                    contactSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        }
-        
-        // Ensure tech options expand properly on hover
-        const techOptions = document.querySelectorAll('.tech-options');
-        techOptions.forEach(option => {
-            option.addEventListener('mouseenter', function() {
-                this.style.background = '#f5f0ff';
-                this.style.transition = 'background 0.3s ease';
-            });
-            
-            option.addEventListener('mouseleave', function() {
-                this.style.background = '#f9f7fe';
-            });
-        });
-        
-        // Add tooltip information for technologies
-        const techFacts = {
-            "OpenAI GPT": "We integrate with OpenAI's GPT models for advanced natural language processing in customer service, content generation, and data analysis.",
-            "Anthropic Claude": "Anthropic's Claude offers exceptional reasoning capabilities, making it ideal for complex decision support systems and nuanced content creation.",
-            "Google Gemini": "Google's Gemini provides powerful multimodal capabilities, combining text, image and code understanding.",
-            "Open Source Models": "We leverage open-source LLMs like Llama, Falcon and Mistral for cost-effective and customizable solutions.",
-            "Azure STT/TTS": "Microsoft's speech services deliver enterprise-grade voice recognition and synthesis with multilingual support.",
-            "Google Speech": "Google's speech services offer industry-leading accuracy for voice recognition and natural-sounding text-to-speech.",
-            "Amazon Polly": "Amazon Polly provides lifelike speech synthesis with a wide range of voices and languages.",
-            "Whisper": "OpenAI's Whisper delivers robust speech recognition across dozens of languages and various acoustic environments.",
-            "AWS Rekognition": "AWS's computer vision service enables sophisticated image and video analysis with pre-trained capabilities.",
-            "Google Vision": "Google's Vision API offers powerful image recognition with features like OCR, face detection, and landmark recognition.",
-            "Azure OCR": "Microsoft's OCR technology excels at extracting text from images and documents with high accuracy.",
-            "Open Source OCR": "We implement open-source OCR solutions like Tesseract for flexible, cost-effective text extraction.",
-            "AWS": "AWS provides scalable infrastructure with specialized AI services that can handle massive data processing requirements.",
-            "Azure": "Azure offers seamless integration with Microsoft's business tools and robust enterprise-grade security features.",
-            "Google Cloud": "Google Cloud excels at large-scale machine learning operations with optimized hardware acceleration.",
-            "Digital Ocean": "Digital Ocean provides cost-effective cloud solutions ideal for startups and SMBs implementing their first AI initiatives.",
-            "Rasa": "Rasa is an open-source framework for building contextual assistants with complete flexibility and control.",
-            "Botpress": "Botpress offers a visual development environment for creating advanced conversational experiences.",
-            "Custom Solutions": "We build bespoke conversational interfaces tailored to your specific business needs and use cases.",
-            "API Orchestration": "We integrate multiple AI services through API orchestration to create powerful composite capabilities."
-        };
-        
-        techTags.forEach(tag => {
-            tag.addEventListener('click', function() {
-                const techName = this.textContent.trim();
-                const fact = techFacts[techName] || `${techName} is part of our technology stack evaluation for your specific needs.`;
-                
-                // Create tooltip
-                let tooltip = document.getElementById('tech-tooltip');
-                if (!tooltip) {
-                    tooltip = document.createElement('div');
-                    tooltip.id = 'tech-tooltip';
-                    tooltip.style.position = 'absolute';
-                    tooltip.style.zIndex = '1000';
-                    tooltip.style.background = 'white';
-                    tooltip.style.color = '#333';
-                    tooltip.style.padding = '10px 15px';
-                    tooltip.style.borderRadius = '8px';
-                    tooltip.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
-                    tooltip.style.maxWidth = '300px';
-                    tooltip.style.fontSize = '0.9rem';
-                    tooltip.style.lineHeight = '1.5';
-                    tooltip.style.transition = 'opacity 0.3s ease';
-                    document.body.appendChild(tooltip);
-                }
-                
-                // Position the tooltip near the tag
-                const tagRect = this.getBoundingClientRect();
-                tooltip.style.left = `${tagRect.left + window.scrollX}px`;
-                tooltip.style.top = `${tagRect.bottom + window.scrollY + 10}px`;
-                
-                // Set content and show tooltip
-                tooltip.textContent = fact;
-                tooltip.style.opacity = '1';
-                
-                // Hide tooltip after 3 seconds
-                setTimeout(() => {
-                    tooltip.style.opacity = '0';
-                    setTimeout(() => {
-                        if (document.body.contains(tooltip)) {
-                            document.body.removeChild(tooltip);
-                        }
-                    }, 300);
-                }, 3000);
-            });
-        });
-    });
-
-    // Simple Tab Switching JavaScript
-    document.addEventListener('DOMContentLoaded', function() {
-        // Find all tab buttons
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        
-        // Find all tab content panes
-        const tabPanes = document.querySelectorAll('.tab-pane');
-        
-        // Add click event listeners to each tab button
-        tabButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const tabId = this.getAttribute('data-tab');
-                
-                // Remove active class from all buttons
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('active');
-                    btn.classList.remove('bg-purple-800');
-                    btn.classList.add('bg-gray-800');
-                });
-                
-                // Add active class to clicked button
-                this.classList.add('active');
-                this.classList.add('bg-purple-800');
-                this.classList.remove('bg-gray-800');
-                
-                // Hide all tab panes
-                tabPanes.forEach(pane => {
-                    pane.classList.add('hidden');
-                });
-                
-                // Show the selected tab pane
-                const targetPane = document.getElementById(tabId + '-tab');
-                if (targetPane) {
-                    targetPane.classList.remove('hidden');
-                } else {
-                    console.error('Tab pane not found for tab: ' + tabId);
-                }
-            });
-        });
-        
-        // Function to initialize tabs
-        function initTabs() {
-            // Check if we have any tab buttons
-            if (tabButtons.length === 0) {
-                console.warn('No tab buttons found');
-                return;
-            }
-            
-            // Check if we have any tab panes
-            if (tabPanes.length === 0) {
-                console.warn('No tab panes found');
-                return;
-            }
-            
-            // If no tab is active, activate the first one
-            let activeTab = document.querySelector('.tab-btn.active');
-            if (!activeTab && tabButtons.length > 0) {
-                // Trigger click on first tab
-                tabButtons[0].click();
-            }
-        }
-        
-        // Initialize tabs
-        initTabs();
-        
-        // Log successful initialization
-        console.log('Tab system initialized successfully');
-    });
-
-    // Global function for tab switching
-    function switchTab(tabId) {
-        console.log("Switching to tab:", tabId);
-        
-        // Get all elements
-        const tabButtons = document.querySelectorAll('#industry-tabs .tab-btn');
-        const tabPanes = document.querySelectorAll('#tab-content .tab-pane');
-        
-        // Update button states
-        tabButtons.forEach(btn => {
-            if (btn.getAttribute('data-tab') === tabId) {
-                btn.classList.add('active', 'bg-purple-800');
-                btn.classList.remove('bg-gray-800');
-            } else {
-                btn.classList.remove('active', 'bg-purple-800');
-                btn.classList.add('bg-gray-800');
-            }
-        });
-        
-        // Update content visibility
-        tabPanes.forEach(pane => {
-            if (pane.id === tabId + '-tab') {
-                pane.classList.remove('hidden');
-            } else {
-                pane.classList.add('hidden');
+    if (adminPasswordInput) {
+        adminPasswordInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                verifyAdminPassword();
             }
         });
     }
 
-    // Initialize on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        // Make sure retail tab is active by default
-        switchTab('retail');
+    // Image Error Handling
+    const traditionalImg = document.querySelector('.bg-image.traditional');
+    const aiImg = document.querySelector('.bg-image.ai-powered');
+    
+    if (traditionalImg) {
+        traditionalImg.addEventListener('error', function() {
+            this.src = "https://via.placeholder.com/1920x1080/240046/ffffff?text=Traditional+Business";
+            trackInteraction('imageError', 'traditional-business-img');
+        });
+    }
+    
+    if (aiImg) {
+        aiImg.addEventListener('error', function() {
+            this.src = "https://via.placeholder.com/1920x1080/7B2CBF/ffffff?text=AI-Powered+Business";
+            trackInteraction('imageError', 'ai-powered-business-img');
+        });
+    }
+
+    // Tab Switching Initialization (uses global switchTab function)
+    const tabButtons = document.querySelectorAll('#industry-tabs .tab-btn');
+    const tabPanes = document.querySelectorAll('#tab-content .tab-pane');
+    
+    if (tabButtons.length > 0 && tabPanes.length > 0) {
+        // Note: Click handling is done via HTML onclick attribute
+        
+        // Initialize the default tab
+        let activeTabFound = false;
+        let initiallyActiveTabId = null;
+        
+        tabButtons.forEach(btn => {
+            if (btn.classList.contains('active')) {
+                activeTabFound = true;
+                initiallyActiveTabId = btn.getAttribute('data-tab');
+            }
+        });
+        
+        if (initiallyActiveTabId) {
+            switchTab(initiallyActiveTabId);
+        } else if (tabButtons.length > 0) {
+            const firstTabId = tabButtons[0].getAttribute('data-tab') || 'retail';
+            switchTab(firstTabId);
+        }
+        
+        console.log('Tab system initialization complete.');
+    } else {
+        console.warn("Tab buttons or panes not found during initialization.");
+    }
+
+    // Product Section Interactions
+    document.querySelector('a[href*="github.io/InfinityAI-Jewelry-Website-Sample/"]')?.addEventListener('click', () => {
+        trackInteraction('demoClick', 'jewelry-tryon', {
+            section: 'products',
+            demoType: 'jewelry-tryon'
+        });
+    });
+    
+    document.querySelector('.products-section a[href="#contact"]')?.addEventListener('click', () => {
+        trackInteraction('demoClick', 'chatbot-demo-request', {
+            section: 'products',
+            demoType: 'chatbot-demo'
+        });
     });
 
-    // Products Section Interaction Scripts
-    document.addEventListener('DOMContentLoaded', function() {
-        // Initialize Intersection Observer for Animation on Scroll
-        const productCards = document.querySelectorAll('.enhanced-card');
-        const techTags = document.querySelectorAll('.tech-tag');
-        const demoButtons = document.querySelectorAll('.demo-button');
-        
-        // Animation on scroll for product cards
-        const productObserver = new IntersectionObserver((entries) => {
+    // Set up global tracking for elements with track-click class
+    document.querySelectorAll('.track-click').forEach(element => {
+        element.addEventListener('click', function(e) {
+            // Get tracking ID from various sources
+            let elementId = this.id || 
+                          this.dataset.trackId || 
+                          this.getAttribute('href');
+            
+            // If no ID found, create one from the element content/type
+            if (!elementId) {
+                const text = this.textContent.trim();
+                elementId = text 
+                    ? text.substring(0, 50).replace(/\s+/g, '-').toLowerCase() 
+                    : `${this.tagName.toLowerCase()}-element`;
+            }
+            
+            // Extra data to track with the click
+            const additionalData = {
+                tagName: this.tagName,
+                text: this.textContent.trim(),
+                href: this.getAttribute('href') || null,
+                classes: Array.from(this.classList).join(' '),
+                parentId: this.parentElement?.id || null,
+                sectionId: this.closest('section')?.id || null
+            };
+            
+            trackInteraction('click', elementId, additionalData);
+        });
+    });
+
+    // Track section views using Intersection Observer
+    if ('IntersectionObserver' in window) {
+        // Create observer for section views
+        const viewObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                    setTimeout(() => {
-                        entry.target.style.opacity = 1;
-                        entry.target.style.transform = 'translateY(0)';
-                    }, 100);
-                    productObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        
-        productCards.forEach(card => {
-            card.style.opacity = 0;
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            productObserver.observe(card);
-        });
-        
-        // Staggered animation for tech tags
-        let tagDelay = 0;
-        techTags.forEach(tag => {
-            tag.style.opacity = 0;
-            tag.style.transform = 'translateY(10px)';
-            tag.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-            
-            setTimeout(() => {
-                tag.style.opacity = 1;
-                tag.style.transform = 'translateY(0)';
-            }, 300 + tagDelay);
-            
-            tagDelay += 50; // Stagger each tag by 50ms
-        });
-        
-        // Add hover animation to demo buttons
-        demoButtons.forEach(button => {
-            button.addEventListener('mouseenter', function() {
-                this.classList.add('animate-pulse');
-            });
-            
-            button.addEventListener('mouseleave', function() {
-                this.classList.remove('animate-pulse');
-            });
-        });
-        
-        // Add tooltip functionality for tech stack tags
-        const techTagDetails = {
-            'MediaPipe': 'Google\'s framework for building multimodal ML pipelines',
-            'JavaScript': 'Core programming language for interactive web experiences',
-            'HTML/CSS': 'Markup and styling technologies for web interfaces',
-            'AWS Lambda': 'Serverless compute service for backend processing',
-            'AWS S3': 'Object storage service for images and assets',
-            'DynamoDB': 'NoSQL database service for storing product and user data',
-            'API Gateway': 'API management service for secure backend access',
-            'WebGL': 'JavaScript API for rendering interactive 3D graphics',
-            'RESTful APIs': 'Architecture style for designing networked applications',
-            'Responsive Design': 'Ensures optimal viewing across all device sizes',
-            'Rasa': 'Open source framework for building contextual AI assistants',
-            'LangChain': 'Framework for developing LLM-powered applications',
-            'Open Source LLMs': 'Self-hosted language models like Mistral and DeepSeek',
-            'OpenAI GPT': 'Advanced language models for human-like text generation',
-            'Anthropic Claude': 'LLM designed for helpfulness, harmlessness, and honesty',
-            'Google Gemini': 'Google\'s multimodal AI model for text and vision tasks',
-            'AWS Deployment': 'Scalable cloud infrastructure for AI application hosting',
-            'Cloud Hosting': 'Flexible deployment options across major cloud providers',
-            'Retrieval Augmented Generation': 'Enhances LLM responses with external data',
-            'Vector Databases': 'Specialized storage for embedding vectors and similarity search',
-            'API Orchestration': 'Coordinating multiple AI services for enhanced capabilities'
-        };
-        
-        // Initialize tooltips for tech tags
-        techTags.forEach(tag => {
-            const tagText = tag.textContent.trim();
-            
-            tag.addEventListener('mouseenter', function(e) {
-                // Create tooltip if it doesn't exist
-                let tooltip = document.getElementById('tech-tooltip');
-                if (!tooltip) {
-                    tooltip = document.createElement('div');
-                    tooltip.id = 'tech-tooltip';
-                    tooltip.style.position = 'absolute';
-                    tooltip.style.zIndex = 1000;
-                    tooltip.style.backgroundColor = 'rgba(33, 33, 33, 0.9)';
-                    tooltip.style.color = '#fff';
-                    tooltip.style.padding = '8px 12px';
-                    tooltip.style.borderRadius = '6px';
-                    tooltip.style.fontSize = '0.875rem';
-                    tooltip.style.maxWidth = '250px';
-                    tooltip.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-                    tooltip.style.pointerEvents = 'none';
-                    tooltip.style.transition = 'opacity 0.2s ease';
-                    document.body.appendChild(tooltip);
-                }
-                
-                // Set content and position
-                tooltip.textContent = techTagDetails[tagText] || tagText;
-                
-                const rect = this.getBoundingClientRect();
-                tooltip.style.left = rect.left + (rect.width / 2) - (tooltip.offsetWidth / 2) + 'px';
-                tooltip.style.top = rect.top - tooltip.offsetHeight - 8 + 'px';
-                tooltip.style.opacity = '1';
-                
-                // Add arrow
-                tooltip.style.setProperty('--arrow-top', tooltip.offsetHeight + 'px');
-                tooltip.style.setProperty('--arrow-left', (tooltip.offsetWidth / 2) + 'px');
-                
-                // Ensure tooltip is fully visible
-                const tooltipRect = tooltip.getBoundingClientRect();
-                if (tooltipRect.left < 0) {
-                    tooltip.style.left = '8px';
-                } else if (tooltipRect.right > window.innerWidth) {
-                    tooltip.style.left = (window.innerWidth - tooltipRect.width - 8) + 'px';
-                }
-                
-                if (tooltipRect.top < 0) {
-                    tooltip.style.top = (rect.bottom + 8) + 'px';
-                }
-            });
-            
-            tag.addEventListener('mouseleave', function() {
-                const tooltip = document.getElementById('tech-tooltip');
-                if (tooltip) {
-                    tooltip.style.opacity = '0';
-                    setTimeout(() => {
-                        if (tooltip.parentElement) {
-                            tooltip.parentElement.removeChild(tooltip);
+                    const element = entry.target;
+                    const sectionId = element.id || 
+                                   element.dataset.trackId || 
+                                   element.getAttribute('data-section-name') ||
+                                   'unknown-section';
+                    
+                    trackInteraction('sectionView', sectionId, {
+                        visiblePercentage: Math.round(entry.intersectionRatio * 100),
+                        position: {
+                            top: Math.round(element.getBoundingClientRect().top),
+                            y: Math.round(window.scrollY + element.getBoundingClientRect().top)
                         }
-                    }, 200);
+                    });
+                    
+                    // Unobserve to prevent multiple triggers for the same section
+                    observer.unobserve(element);
                 }
             });
+        }, { threshold: 0.5 }); // Trigger when 50% of section is visible
+        
+        // Observe all sections that should be tracked
+        document.querySelectorAll('section, .track-view').forEach(section => {
+            viewObserver.observe(section);
         });
         
-        // Demo button click tracking
-        const trackDemoClick = function(demoType) {
-            console.log(`Demo button clicked: ${demoType}`);
-            // Add your analytics tracking code here
-            // Example: gtag('event', 'demo_click', { 'demo_type': demoType });
-        };
+        // Create a separate observer for engagement tracking (how far user scrolls)
+        let maxScrollDepth = 0;
+        let scrollDepthTrackedAt = [25, 50, 75, 90]; // Percentages at which to track
+        let trackedScrollDepths = []; // Keep track of which depths we've already tracked
         
-        // Initialize demo button tracking
-        document.querySelector('a[href*="tryon.html"]')?.addEventListener('click', function() {
-            trackDemoClick('jewelry-tryon');
-        });
-        
-        document.querySelector('a[href*="dashboard"]')?.addEventListener('click', function() {
-            trackDemoClick('management-dashboard');
-        });
-        
-        document.querySelector('a[href="#contact"]')?.addEventListener('click', function() {
-            trackDemoClick('chatbot-demo-request');
-        });
-        
-        // Add tablet/mobile device detection for optimized rendering
-        const isMobileOrTablet = function() {
-            return window.innerWidth < 992;
-        };
-        
-        // Adjust image quality based on device type to optimize performance
-        const productImages = document.querySelectorAll('.product-image');
-        if (isMobileOrTablet()) {
-            productImages.forEach(img => {
-                const src = img.getAttribute('src');
-                if (src && !src.includes('placeholder') && !src.startsWith('data:')) {
-                    // Add mobile-optimized image parameter or path
-                    // Example: img.src = src.replace('.jpg', '-mobile.jpg');
-                }
-            });
+        function getScrollDepth() {
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const scrollTop = window.scrollY;
+            
+            // Calculate how far the user has scrolled as a percentage
+            return Math.round((scrollTop + windowHeight) / documentHeight * 100);
         }
         
-        // Lazy loading for product images
-        if ('IntersectionObserver' in window) {
-            const imageObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        const src = img.getAttribute('data-src');
-                        if (src) {
-                            img.src = src;
-                            img.removeAttribute('data-src');
-                        }
-                        imageObserver.unobserve(img);
+        // Track scroll depth periodically
+        window.addEventListener('scroll', function() {
+            const currentDepth = getScrollDepth();
+            
+            // Update maximum scroll depth
+            if (currentDepth > maxScrollDepth) {
+                maxScrollDepth = currentDepth;
+                
+                // Check if we've hit any of our tracking thresholds
+                scrollDepthTrackedAt.forEach(threshold => {
+                    if (maxScrollDepth >= threshold && !trackedScrollDepths.includes(threshold)) {
+                        trackedScrollDepths.push(threshold);
+                        trackInteraction('scrollDepth', `scroll-${threshold}`, {
+                            depth: threshold,
+                            pixelY: window.scrollY
+                        });
                     }
                 });
-            });
-            
-            document.querySelectorAll('img[data-src]').forEach(img => {
-                imageObserver.observe(img);
-            });
-        } else {
-            // Fallback for browsers that don't support IntersectionObserver
-            document.querySelectorAll('img[data-src]').forEach(img => {
-                img.src = img.getAttribute('data-src');
-                img.removeAttribute('data-src');
+            }
+        }, { passive: true });
+    } else {
+        // Fallback for browsers that don't support IntersectionObserver
+        console.log('IntersectionObserver not supported, scroll tracking disabled');
+    }
+    
+    // Track time spent on page
+    let pageEntryTime = new Date();
+    let timeOnPageTracked = false;
+    
+    function trackTimeOnPage() {
+        if (timeOnPageTracked) return;
+        
+        const currentTime = new Date();
+        const timeOnPageInSeconds = Math.round((currentTime - pageEntryTime) / 1000);
+        
+        trackInteraction('timeOnPage', 'page-exit', {
+            seconds: timeOnPageInSeconds,
+            formattedTime: formatTime(timeOnPageInSeconds)
+        });
+        
+        timeOnPageTracked = true;
+    }
+    
+    function formatTime(seconds) {
+        if (seconds < 60) return `${seconds} seconds`;
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes} min ${remainingSeconds} sec`;
+    }
+    
+    // Track time when user leaves
+    window.addEventListener('beforeunload', trackTimeOnPage);
+    
+    // Also track if user switches tabs
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'hidden') {
+            trackTimeOnPage();
+        }
+    });
+    
+    // Set periodic tracking
+    setInterval(function() {
+        const currentTime = new Date();
+        const timeOnPageInSeconds = Math.round((currentTime - pageEntryTime) / 1000);
+        
+        // Only track every 60 seconds
+        if (timeOnPageInSeconds > 0 && timeOnPageInSeconds % 60 === 0) {
+            trackInteraction('activeDuration', 'periodic-update', {
+                seconds: timeOnPageInSeconds,
+                formattedTime: formatTime(timeOnPageInSeconds)
             });
         }
-        
-        // Add demo mode highlighting for showcasing product functionality
-        const highlightProductFeatures = function(productId) {
-            const product = document.getElementById(productId);
-            if (!product) return;
-            
-            const features = product.querySelectorAll('.feature-item');
-            
-            // Clear any existing highlights
-            features.forEach(feature => {
-                feature.classList.remove('highlight-feature');
-            });
-            
-            // Sequentially highlight each feature
-            let delay = 0;
-            features.forEach(feature => {
-                setTimeout(() => {
-                    feature.classList.add('highlight-feature');
-                    
-                    // Remove highlight after 2 seconds
-                    setTimeout(() => {
-                        feature.classList.remove('highlight-feature');
-                    }, 2000);
-                }, delay);
+    }, 5000); // Check every 5 seconds
+    
+    // Track External Link Clicks
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+        if (!link.classList.contains('track-click')) { // Avoid double tracking
+            link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                const isExternal = !href.includes(window.location.hostname);
                 
-                delay += 2500; // Stagger each feature highlight
-            });
-        };
-        
-        // Optional: Automatically trigger feature highlighting on page load
-        // setTimeout(() => {
-        //     highlightProductFeatures('jewelry-tryon-product');
-        // }, 3000);
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const openBtn = document.getElementById('openAssessmentBtn');
-        const closeBtn = document.getElementById('closeModalBtn');
-        const modal = document.getElementById('assessmentModal');
-        const modalContent = modal.querySelector('.bg-white');
-        const form = document.getElementById('assessmentForm');
-        const toast = document.getElementById('toast');
-        
-        // Open modal
-        openBtn.addEventListener('click', function() {
-            modal.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // Prevent scrolling when modal is open
-        });
-        
-        // Close modal
-        closeBtn.addEventListener('click', function() {
-            closeModal();
-        });
-        
-        // Close modal when clicking outside the content
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-        
-        // Prevent closing when clicking on modal content
-        modalContent.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-        
-        // Function to close modal
-        function closeModal() {
-            modal.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        }
-        
-        // Form submission
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(form);
-            const formDataObj = {};
-            
-            formData.forEach((value, key) => {
-                formDataObj[key] = value;
-            });
-            
-            console.log('Form data submitted:', formDataObj);
-            
-            // Add a loading state to the submit button
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `
-                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                Processing...
-            `;
-            
-            // Simulate form submission with a delay
-            setTimeout(function() {
-                // Hide modal
-                closeModal();
-                
-                // Reset form
-                form.reset();
-                
-                // Reset submit button
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-                
-                // Show toast notification
-                toast.classList.remove('translate-x-full');
-                
-                // Hide toast after 5 seconds
-                setTimeout(function() {
-                    toast.classList.add('translate-x-full');
-                }, 5000);
-                
-            }, 1500);
-        });
-        
-        // Add keyboard event to close modal with Escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-                closeModal();
-            }
-        });
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Checkbox styling for the newsletter form
-        const newsletterCheckbox = document.querySelector('#newsletterForm input[type="checkbox"]');
-        const checkboxSvg = document.querySelector('#newsletterForm svg');
-        
-        if (newsletterCheckbox && checkboxSvg) {
-            newsletterCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    checkboxSvg.classList.remove('hidden');
-                } else {
-                    checkboxSvg.classList.add('hidden');
+                if (isExternal) {
+                    trackInteraction('externalLink', href, {
+                        text: this.textContent.trim(),
+                        destination: href
+                    });
                 }
             });
         }
-        
-        // Enhanced back to top button functionality
-        const backToTopButton = document.getElementById('backToTop');
-        
-        if (backToTopButton) {
-            // Show button when scrolled down
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 600) {
-                    backToTopButton.classList.remove('opacity-0', 'invisible');
-                    backToTopButton.classList.add('opacity-100');
-                } else {
-                    backToTopButton.classList.remove('opacity-100');
-                    backToTopButton.classList.add('opacity-0', 'invisible');
-                }
+    });
+    
+    // Track Form Field Interactions
+    document.querySelectorAll('form input, form select, form textarea').forEach(field => {
+        field.addEventListener('focus', function() {
+            const formId = this.closest('form')?.id || 'unknown-form';
+            trackInteraction('fieldFocus', `${formId}-${this.name || this.id || 'unnamed-field'}`, {
+                fieldType: this.type || this.tagName.toLowerCase(),
+                form: formId
             });
-            
-            // Smooth scroll to top with animation
-            backToTopButton.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
+        });
+    });
+    
+    // Track Chat Widget Interactions
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatContainer = document.getElementById('chat-container');
+    const sendButton = document.getElementById('send-button');
+    const userMessageInput = document.getElementById('user-message');
+    
+    if (chatToggle) {
+        chatToggle.addEventListener('click', function() {
+            const isOpening = chatContainer?.classList.contains('hidden');
+            trackInteraction('chatWidget', isOpening ? 'open' : 'minimize', {
+                action: isOpening ? 'open' : 'minimize'
+            });
+        });
+    }
+    
+    if (sendButton && userMessageInput) {
+        sendButton.addEventListener('click', function() {
+            const message = userMessageInput.value.trim();
+            if (message) {
+                trackInteraction('chatMessage', 'user-message-sent', {
+                    messageLength: message.length
                 });
+            }
+        });
+    }
+    
+    // Track Video Plays if there are videos on the page
+    document.querySelectorAll('video').forEach(video => {
+        video.addEventListener('play', function() {
+            trackInteraction('videoPlay', this.id || 'unnamed-video', {
+                src: this.currentSrc,
+                duration: this.duration
             });
-            
-            // Add hover animation
-            backToTopButton.addEventListener('mouseenter', function() {
-                this.classList.add('animate-pulse');
-            });
-            
-            backToTopButton.addEventListener('mouseleave', function() {
-                this.classList.remove('animate-pulse');
-            });
-        }
+        });
         
-        // Newsletter form submissions
-        const newsletterForm = document.getElementById('newsletterForm');
-        
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const emailInput = this.querySelector('#newsletter-email');
-                if (!emailInput.value.trim()) return;
-                
-                // Animation for submit button
-                const submitBtn = this.querySelector('button[type="submit"]');
-                submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i>';
-                submitBtn.disabled = true;
-                
-                // Simulate API call with timeout
-                setTimeout(() => {
-                    // Reset form
-                    this.reset();
-                    checkboxSvg.classList.add('hidden');
-                    
-                    // Success message
-                    emailInput.value = '';
-                    emailInput.placeholder = 'Subscribed successfully!';
-                    
-                    // Reset button
-                    submitBtn.innerHTML = '<i class="fas fa-check"></i>';
-                    
-                    // Reset after 2 seconds
-                    setTimeout(() => {
-                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i>';
-                        submitBtn.disabled = false;
-                        emailInput.placeholder = 'Your email address';
-                    }, 2000);
-                }, 1500);
+        video.addEventListener('pause', function() {
+            trackInteraction('videoPause', this.id || 'unnamed-video', {
+                src: this.currentSrc,
+                currentTime: this.currentTime,
+                percentage: Math.round((this.currentTime / this.duration) * 100)
             });
-        }
-    });   
+        });
+        
+        video.addEventListener('ended', function() {
+            trackInteraction('videoComplete', this.id || 'unnamed-video', {
+                src: this.currentSrc,
+                duration: this.duration
+            });
+        });
+    });
+    
+    // Final initialization logs
+    console.log('Interaction tracking initialized successfully');
+    console.log('Session ID:', window.sessionId);
+});
 </script>
 </body>
 </html>
