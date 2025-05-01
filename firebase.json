@@ -7,6 +7,14 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/**",
+        "destination": "https://infiniteaisolutions.com/:1",
+        "type": 301,
+        "host": "www.infiniteaisolutions.com"
+      }
     ]
   }
 }
