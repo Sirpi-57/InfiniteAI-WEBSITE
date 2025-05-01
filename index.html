@@ -122,15 +122,14 @@
             transform: translateX(0);
         }
 
-        /* Make menu button more visible */
         #mobileMenuBtn {
             background-color: rgba(123, 44, 191, 0.8); /* Semi-transparent purple */
-            width: 44px;
-            height: 44px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 44px; /* Or use Tailwind w-11 */
+            height: 44px; /* Or use Tailwind h-11 */
+            border-radius: 8px; /* Or use Tailwind rounded-lg */
+            /* display: flex;  <--- REMOVE */
+            /* align-items: center; <--- REMOVE */
+            /* justify-content: center; <--- REMOVE */
             transition: background-color 0.3s ease;
         }
 
@@ -1706,7 +1705,7 @@
                     <a href="/aboutus" class="text-white hover:text-light transition-colors">About Us</a>
                     <a href="#contact" class="text-white hover:text-light transition-colors">Contact</a>
                 </div>
-                <button id="mobileMenuBtn" class="md:hidden text-white bg-purple-800 w-11 h-11 flex items-center justify-center rounded-lg"
+                <button id="mobileMenuBtn" class="block md:hidden text-white bg-purple-800 w-11 h-11 flex items-center justify-center rounded-lg"
                         aria-expanded="false"
                         aria-controls="mobile-menu"
                         aria-label="Toggle menu">
@@ -1741,8 +1740,8 @@
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-section gradient-bg min-h-screen flex items-center relative overflow-hidden" aria-label="Hero section">
+    <!-- Hero Section with padding for nav -->
+    <section class="hero-section gradient-bg min-h-screen flex items-center relative overflow-hidden pt-20 md:pt-24" aria-label="Hero section">
         <!-- Background Animation Container -->
         <div class="animation-background absolute inset-0 w-full h-full">
             <img src="traditional-business.webp" alt="Traditional business processes" class="bg-image traditional absolute inset-0 w-full h-full object-cover">
@@ -1798,9 +1797,9 @@
                     
                     <!-- Secondary Button -->
                     <a id="hero-cta-explore-solutions" href="/#products"
-                       class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center track-click">
-                       <span>Explore Our Solutions</span>
-                       <i class="fas fa-chevron-down ml-2"></i>
+                    class="px-8 py-4 rounded-xl border-2 border-white text-white text-lg font-semibold hover:bg-white hover:text-purple-700 transition-all duration-300 flex items-center justify-center track-click">
+                    <span>Explore Our Solutions</span>
+                    <i class="fas fa-chevron-down ml-2"></i>
                     </a>
                 </div>
         
